@@ -60,6 +60,17 @@ export default function Hero() {
     >
       <div className="grain" aria-hidden="true" />
       
+      {/* Visual Image Background Backdrop */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <img
+          src="/images/home/hero-bg.jpg"
+          alt=""
+          className="w-full h-full object-cover opacity-20 lg:opacity-30 scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#071422] via-[#071422]/95 to-[#071422]/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#071422] via-transparent to-[#071422]/90" />
+      </div>
+
       {/* Background ambient lighting */}
       <div
         aria-hidden="true"
@@ -100,8 +111,8 @@ export default function Hero() {
               We Build <span className="gold-shimmer italic">High-Converting Websites</span> &amp; Scale Revenue with Precision Marketing
             </h1>
 
-            {/* Crystal-Clear 5-Second Explainer */}
-            <p className="!text-slate-100 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl font-normal">
+            {/* 5-Second Explainer: Hidden on mobile for cleaner responsive UX, visible on tablet & desktop */}
+            <p className="hidden md:block !text-slate-100 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl font-normal">
               Varun Digitals turns your digital presence into a compounding revenue engine. We combine <strong className="!text-white font-bold">bespoke web engineering</strong>, <strong className="!text-white font-bold">#1 SEO rankings</strong>, and <strong className="!text-white font-bold">high-ROAS paid ads</strong> to deliver qualified pipeline and verified ROI.
             </p>
 
