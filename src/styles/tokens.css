@@ -1,0 +1,39 @@
+/* Design tokens — navy, gold, type, space, elevation */
+
+@theme {
+  --color-navy: #0b1f3a;
+  --color-navy-2: #13294b;
+  --color-navy-deep: #071422;
+  --color-accent: #c4a24a;
+  --color-accent-hover: #b08c38;
+  --color-accent-text: #967016;
+  --color-gold-soft: #e8d5a3;
+  --color-gold-bright: #fcd34d;
+  --color-ink: #111827;
+  --color-muted: #4b5563;
+  --color-bg: #ffffff;
+  --color-surface: #f8f6f0;
+  --color-line: #e2ded5;
+  --color-cream: #faf8f3;
+
+  --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", Inter, system-ui, sans-serif;
+
+  --radius: 14px;
+  --radius-sm: 10px;
+  --radius-lg: 22px;
+  --radius-full: 999px;
+
+  --shadow-card: 0 1px 3px rgba(11, 31, 58, 0.06), 0 12px 32px rgba(11, 31, 58, 0.08);
+  --shadow-lifted: 0 10px 24px rgba(11, 31, 58, 0.08), 0 28px 64px rgba(11, 31, 58, 0.14);
+  --shadow-gold: 0 10px 28px rgba(196, 162, 74, 0.35);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --container: 1180px;
+  --gutter: clamp(18px, 4.5vw, 36px);
+  --section: clamp(72px, 9vw, 132px);
+  --header-h: 72px;
+  --topbar-h: 36px;
+}

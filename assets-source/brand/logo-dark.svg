@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 52" role="img" aria-label="Varun Digitals logo">
+  <!-- Monogram "V" mark -->
+  <g>
+    <polygon points="14,8 24,8 32,34 26,34" fill="#B8963E"/>
+    <polygon points="50,8 40,8 32,34 38,34" fill="#B8963E"/>
+    <rect x="30" y="34" width="4" height="6" rx="1" fill="#B8963E"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="62" y="34" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" fill="#0B1F3A" letter-spacing="-0.3">Varun</text>
+  <text x="62" y="47" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="400" fill="#B8963E" letter-spacing="3.5">DIGITALS</text>
+</svg>
