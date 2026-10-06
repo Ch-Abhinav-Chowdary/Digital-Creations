@@ -1,42 +1,38 @@
 // src/components/sections/Testimonials.jsx
 import { useState } from 'react'
-import { ChevronLeft, ChevronRight, Quote, Star, CheckCircle, ShieldCheck } from 'lucide-react'
-import SectionHeading from '../ui/SectionHeading'
+import { ChevronLeft, ChevronRight, Quote, Star, TrendingUp } from 'lucide-react'
 import { useReveal } from '../ui/useReveal'
 
 const TESTIMONIALS = [
   {
-    quote:
-      'Varun Digitals completely re-engineered our organic search acquisition and paid funnels. Within eight months, our marketing-qualified inbound pipeline grew by over 300% while cutting our cost per acquisition by 38%. Their transparency in reporting gave our executive board full clarity on ROI.',
+    quote: 'Within eight months, our inbound pipeline grew by over 300% while cutting cost per acquisition by 38%. Their attribution clarity gave our board full ROI confidence.',
     name: 'Alex Morgan',
-    role: 'VP of Marketing',
+    role: 'VP Marketing',
     company: 'CloudFlow Analytics',
     industry: 'B2B SaaS',
     initials: 'AM',
-    rating: 5,
-    metrics: '+320% Organic MQLs',
+    metric: '+320% Organic MQLs',
+    metricColor: '#346F58',
   },
   {
-    quote:
-      'We approached Varun Digitals for a full redesign and came away with a high-converting digital platform that completely shifted our business away from expensive third-party portal fees. Our mobile conversion rate doubled and direct inquiries surged by 65% in the first quarter.',
+    quote: 'Their redesign completely shifted us away from expensive portal fees. Mobile conversion doubled and direct inquiries surged 65% in the first quarter.',
     name: 'David Sterling',
     role: 'Managing Principal',
     company: 'Apex Property Partners',
     industry: 'Commercial Real Estate',
     initials: 'DS',
-    rating: 5,
-    metrics: '2.1x Inbound Leads',
+    metric: '2.1× Inbound Leads',
+    metricColor: '#2D6E8F',
   },
   {
-    quote:
-      'What sets Varun Digitals apart is their commercial rigour. They do not report on surface-level vanity metrics — every deliverable is tied to measurable revenue impact and lead velocity. They operate as an indispensable growth partner to our leadership team.',
+    quote: 'Varun Digitals doesn\'t report vanity metrics — every deliverable ties to revenue impact and lead velocity. An indispensable growth partner.',
     name: 'Elena Rostova',
     role: 'Chief Operating Officer',
     company: 'Artisan Culinary Group',
     industry: 'Hospitality & Retail',
     initials: 'ER',
-    rating: 5,
-    metrics: '−28% Delivery Fees',
+    metric: '−28% Delivery Costs',
+    metricColor: '#C08930',
   },
 ]
 
@@ -49,83 +45,98 @@ export default function Testimonials() {
   const t = TESTIMONIALS[active]
 
   return (
-    <section ref={ref} className="section bg-[#F7F8FA] relative overflow-hidden">
+    <section ref={ref} className="section bg-[var(--color-surface)] relative overflow-hidden">
+      {/* Top accent line */}
+      <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-[var(--color-accent)] via-[var(--color-tone-steel)] to-[var(--color-tone-forest)] opacity-70" />
+
       <div className="container">
-        <SectionHeading
-          eyebrow="Client Success"
-          title="Verified Outcomes from Enterprise Leaders"
-          lead="Real results delivered for founders, marketing directors, and enterprise executives across high-competition industries."
-        />
 
-        <div className="reveal max-w-4xl mx-auto">
-          <div className="relative bg-white rounded-[var(--radius-lg)] border border-[var(--color-line)] p-8 md:p-12 shadow-[var(--shadow-lifted)]">
-            {/* Top Bar with rating & verified pill */}
-            <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-[#E5E7EB] mb-8">
-              <div className="flex items-center gap-2">
-                <div className="flex text-[#967016]">
-                  {[...Array(t.rating)].map((_, i) => (
-                    <Star key={i} size={18} fill="#967016" />
-                  ))}
-                </div>
-                <span className="text-xs font-extrabold text-[#0B1F3A] ml-2">Verified 5.0 Executive Review</span>
-              </div>
+        {/* Section header */}
+        <div className="text-center mb-12 max-w-2xl mx-auto">
+          <p className="eyebrow justify-center">Client Success</p>
+          <h2 style={{ fontFamily: 'var(--font-display)' }}>
+            Real Results, Verified Leaders
+          </h2>
+        </div>
 
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#967016]/10 text-[#967016] text-xs font-bold border border-[#967016]/20">
-                <CheckCircle size={14} /> Key Result: {t.metrics}
-              </div>
-            </div>
+        {/* Testimonial card */}
+        <div className="reveal max-w-3xl mx-auto">
+          <div className="relative bg-white rounded-[var(--radius-lg)] border border-[var(--color-line)] shadow-[var(--shadow-lifted)] overflow-hidden">
 
-            {/* Quote icon & text */}
-            <div className="relative">
-              <Quote
-                size={48}
-                className="text-[#967016]/20 absolute -top-4 -left-2 pointer-events-none"
-                aria-hidden="true"
-              />
-              <blockquote className="text-[#0B1F3A] text-lg md:text-xl font-serif italic leading-relaxed mb-8 relative z-10 pl-6 border-l-3 border-[#967016]">
-                &ldquo;{t.quote}&rdquo;
-              </blockquote>
-            </div>
+            {/* Colored top bar */}
+            <div className="h-1 bg-gradient-to-r from-[var(--color-accent)] via-[var(--color-tone-steel)] to-[var(--color-tone-forest)]" />
 
-            {/* Attribution footer */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 pt-6 border-t border-[#E5E7EB]">
-              <div className="flex items-center gap-4">
-                <div
-                  className="w-14 h-14 rounded-full bg-[#0B1F3A] border-2 border-[#967016] flex items-center justify-center flex-shrink-0 shadow-md"
-                  aria-hidden="true"
-                >
-                  <span className="text-amber-300 font-bold text-base">{t.initials}</span>
-                </div>
-                <div>
-                  <div className="font-extrabold text-[#0B1F3A] text-base">{t.name}</div>
-                  <div className="text-xs font-medium text-[#4B5563]">
-                    {t.role} • <span className="font-bold text-[#0B1F3A]">{t.company}</span>
+            <div className="p-8 md:p-10">
+              {/* Stars + metric */}
+              <div className="flex flex-wrap items-center justify-between gap-3 mb-7">
+                <div className="flex items-center gap-2">
+                  <div className="flex text-[var(--color-accent)]">
+                    {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
                   </div>
-                  <div className="text-[11px] text-[#967016] font-bold mt-0.5">{t.industry}</div>
+                  <span className="text-xs font-bold text-[var(--color-muted)]">Verified Executive Review</span>
+                </div>
+                <div
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold"
+                  style={{
+                    color: t.metricColor,
+                    background: `${t.metricColor}15`,
+                    border: `1px solid ${t.metricColor}35`,
+                  }}
+                >
+                  <TrendingUp size={12} />
+                  {t.metric}
                 </div>
               </div>
 
-              {/* Slider Navigation Buttons */}
-              <div className="flex items-center gap-3 self-end sm:self-center">
-                <button
-                  onClick={prev}
-                  aria-label="Previous testimonial"
-                  className="w-11 h-11 rounded-full border border-[#E5E7EB] bg-[#F7F8FA] hover:bg-[#0B1F3A] hover:text-[#B8963E] text-[#0B1F3A] flex items-center justify-center transition-colors cursor-pointer shadow-sm"
+              {/* Quote */}
+              <div className="relative mb-8">
+                <Quote size={40} className="text-[var(--color-accent)]/15 absolute -top-3 -left-1 pointer-events-none" aria-hidden="true" />
+                <blockquote
+                  className="text-[var(--color-ink)] text-lg md:text-xl italic leading-relaxed pl-6 border-l-4 border-[var(--color-accent)]"
+                  style={{ fontFamily: 'var(--font-display)' }}
                 >
-                  <ChevronLeft size={20} />
-                </button>
-                <span className="text-xs text-[#5B6575] font-mono px-1">
-                  {active + 1} / {TESTIMONIALS.length}
-                </span>
-                <button
-                  onClick={next}
-                  aria-label="Next testimonial"
-                  className="w-11 h-11 rounded-full border border-[#E5E7EB] bg-[#F7F8FA] hover:bg-[#0B1F3A] hover:text-[#B8963E] text-[#0B1F3A] flex items-center justify-center transition-colors cursor-pointer shadow-sm"
-                >
-                  <ChevronRight size={20} />
-                </button>
+                  &ldquo;{t.quote}&rdquo;
+                </blockquote>
+              </div>
+
+              {/* Author + navigation */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5 pt-6 border-t border-[var(--color-line)]">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[var(--color-navy)] border-2 border-[var(--color-accent)] flex items-center justify-center flex-shrink-0">
+                    <span className="text-[var(--color-gold-bright)] font-bold text-sm">{t.initials}</span>
+                  </div>
+                  <div>
+                    <div className="font-extrabold text-[var(--color-navy)] text-sm">{t.name}</div>
+                    <div className="text-xs text-[var(--color-muted)] font-medium">
+                      {t.role} · <span className="font-bold text-[var(--color-navy)]">{t.company}</span>
+                    </div>
+                    <div className="text-[11px] font-bold mt-0.5" style={{ color: t.metricColor }}>{t.industry}</div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <button onClick={prev} aria-label="Previous" className="w-10 h-10 rounded-full border border-[var(--color-line)] bg-[var(--color-surface)] hover:bg-[var(--color-navy)] hover:text-white hover:border-[var(--color-navy)] text-[var(--color-ink)] flex items-center justify-center transition-all cursor-pointer">
+                    <ChevronLeft size={18} />
+                  </button>
+                  <span className="text-xs text-[var(--color-muted)] font-mono">{active + 1}/{TESTIMONIALS.length}</span>
+                  <button onClick={next} aria-label="Next" className="w-10 h-10 rounded-full border border-[var(--color-line)] bg-[var(--color-surface)] hover:bg-[var(--color-navy)] hover:text-white hover:border-[var(--color-navy)] text-[var(--color-ink)] flex items-center justify-center transition-all cursor-pointer">
+                    <ChevronRight size={18} />
+                  </button>
+                </div>
               </div>
             </div>
+          </div>
+
+          {/* Slide indicators */}
+          <div className="flex justify-center gap-2 mt-5">
+            {TESTIMONIALS.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className={`rounded-full transition-all cursor-pointer ${i === active ? 'w-6 h-2 bg-[var(--color-accent)]' : 'w-2 h-2 bg-[var(--color-line)] hover:bg-[var(--color-accent)]'}`}
+                aria-label={`Go to testimonial ${i + 1}`}
+              />
+            ))}
           </div>
         </div>
       </div>

@@ -113,7 +113,7 @@
 }
 
 .gold-shimmer {
-  background: linear-gradient(90deg, #c4a24a 0%, #f3e3b8 42%, #c4a24a 78%);
+  background: linear-gradient(90deg, #C08930 0%, #F5E8C8 38%, #E8B84B 60%, #C08930 100%);
   background-size: 200% 100%;
   -webkit-background-clip: text;
   background-clip: text;

@@ -7,8 +7,8 @@ export default function SectionHeading({
   className = '',
 }) {
   const textAlign = align === 'center' ? 'text-center mx-auto' : 'text-left'
-  const titleColor = light ? 'text-white font-bold' : 'text-[#0B1F3A] font-bold'
-  const leadColor = light ? 'text-slate-200' : 'text-[#4B5563]'
+  const titleColor = light ? '!text-white' : 'text-[var(--color-navy)]'
+  const leadColor = light ? 'text-slate-300' : 'text-[var(--color-muted)]'
   const eyebrowClass = light ? 'eyebrow eyebrow-light' : 'eyebrow'
 
   return (
@@ -17,12 +17,12 @@ export default function SectionHeading({
         <span className={`${eyebrowClass} ${align === 'center' ? 'justify-center w-full' : ''}`}>{eyebrow}</span>
       )}
       {title && (
-        <h2 className={`${titleColor} mb-4`}>
+        <h2 className={`${titleColor} mb-4`} style={{ fontFamily: 'var(--font-display)' }}>
           {title}
         </h2>
       )}
       {lead && (
-        <p className={`text-lg leading-relaxed ${leadColor}`}>{lead}</p>
+        <p className={`text-base md:text-lg leading-relaxed ${leadColor}`}>{lead}</p>
       )}
     </div>
   )

@@ -1,72 +1,41 @@
 // src/components/sections/GrowthRoadmap.jsx
-// Visual Storytelling: The 4-Stage Revenue Acceleration Engine
 import { Link } from 'react-router-dom'
-import {
-  Sparkles,
-  Search,
-  Code2,
-  TrendingUp,
-  BarChart3,
-  ArrowRight,
-  ShieldCheck,
-  CheckCircle2,
-  Zap,
-} from 'lucide-react'
-import SectionHeading from '../ui/SectionHeading'
+import { Search, Code2, TrendingUp, BarChart3, ArrowRight } from 'lucide-react'
 import { useReveal } from '../ui/useReveal'
 
+// Curated warm palette — steel, amber, forest, terracotta
 const STEPS = [
   {
     phase: '01',
-    title: 'Diagnostic Audit & Growth Roadmap',
-    tag: 'Phase 1: Intelligence',
     icon: Search,
-    desc: 'We analyze your search landscape, conversion friction points, competitor keyword gaps, and technical infrastructure to locate immediate revenue upside.',
-    bullets: [
-      'Full technical SEO & Core Web Vitals audit',
-      'Competitor search & market share analysis',
-      'Conversion funnel & drop-off modeling',
-    ],
-    highlight: 'Zero Guesswork',
+    title: 'Audit & Roadmap',
+    metric: 'Zero Guesswork',
+    color: '#2D6E8F',          /* Deep steel blue */
+    bullets: ['Technical SEO audit', 'Competitor gap analysis', 'Funnel drop-off mapping'],
   },
   {
     phase: '02',
-    title: 'High-Converting Web Engineering',
-    tag: 'Phase 2: Foundation',
     icon: Code2,
-    desc: 'We design and develop sub-second, mobile-first websites and Shopify storefronts engineered specifically to turn anonymous visitors into booked demos and paying customers.',
-    bullets: [
-      'Sub-second page speeds (< 0.8s)',
-      'WCAG AA accessible & conversion-tested UI',
-      'Seamless CRM, analytics & payment architecture',
-    ],
-    highlight: '2.4x Avg Conversion',
+    title: 'Web Engineering',
+    metric: '2.4× Conversion',
+    color: '#C08930',          /* Brand amber */
+    bullets: ['Sub-second speeds (<0.8s)', 'WCAG-compliant UI', 'CRM & payment integration'],
   },
   {
     phase: '03',
-    title: 'Targeted Multi-Channel Traffic Surge',
-    tag: 'Phase 3: Acquisition',
     icon: TrendingUp,
-    desc: 'We launch intent-targeted organic SEO dominance, AI-assisted search positioning, and high-ROAS Google & Meta paid advertising campaigns that drive qualified demand.',
-    bullets: [
-      'Top 3 Google search rankings for high-intent terms',
-      'Targeted Google Ads & Meta retargeting funnels',
-      'Local pack dominance & high-authority PR backlinks',
-    ],
-    highlight: '+320% Pipeline',
+    title: 'Traffic Surge',
+    metric: '+320% Pipeline',
+    color: '#346F58',          /* Forest green */
+    bullets: ['Top 3 Google rankings', 'Google & Meta ad funnels', 'High-authority backlinks'],
   },
   {
     phase: '04',
-    title: 'Attribution & Compounding Revenue',
-    tag: 'Phase 4: Scale',
     icon: BarChart3,
-    desc: 'We continuously A/B test conversion funnels, refine ad spend efficiency, and deliver server-side verified first-party attribution dashboards directly to your executive team.',
-    bullets: [
-      'Transparent live ad & lead attribution dashboards',
-      'Continuous conversion rate optimization (CRO)',
-      'Quarterly executive scale roadmap sprints',
-    ],
-    highlight: '4.8x Ad ROAS',
+    title: 'Scale & Compound',
+    metric: '4.8× ROAS',
+    color: '#B85C38',          /* Terracotta */
+    bullets: ['Live attribution dashboards', 'A/B conversion testing', 'Quarterly sprint reviews'],
   },
 ]
 
@@ -76,101 +45,95 @@ export default function GrowthRoadmap() {
   return (
     <section
       ref={ref}
-      className="section bg-white relative overflow-hidden border-b border-[#E5E7EB]"
-      aria-label="How Varun Digitals transforms and scales your business"
+      className="section bg-white relative overflow-hidden border-b border-[var(--color-line)]"
+      aria-label="How Varun Digitals scales your business"
     >
-      <div className="container relative z-10">
-        <SectionHeading
-          eyebrow="Visual Storytelling Roadmap"
-          title="How Varun Digitals Compounds Your Revenue"
-          lead="From initial technical diagnosis to high-converting web engineering and multi-channel customer acquisition — here is how we engineer market leadership."
-        />
+      {/* Top accent stripe */}
+      <div className="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#2D6E8F] via-[#C08930] to-[#346F58] opacity-70" />
 
-        {/* 4-Step Visual Journey Cards */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-12">
+      <div className="container relative z-10">
+
+        <div className="text-center mb-12 max-w-xl mx-auto">
+          <p className="eyebrow justify-center">How It Works</p>
+          <h2 style={{ fontFamily: 'var(--font-display)' }}>
+            The 4-Phase Revenue Engine
+          </h2>
+          <p className="text-[var(--color-muted)] text-base mt-3">
+            From diagnosis to compounding growth — a proven, repeatable system.
+          </p>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4 mb-12">
           {STEPS.map((step, i) => {
             const Icon = step.icon
             return (
               <article
                 key={step.phase}
-                className="reveal group flex flex-col justify-between p-7 rounded-2xl border border-[#E5E7EB] bg-[#F7F8FA] hover:bg-white hover:border-amber-500/50 hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 relative overflow-hidden"
-                style={{ transitionDelay: `${i * 90}ms` }}
+                className="reveal group relative p-6 rounded-xl border border-[var(--color-line)] bg-[var(--color-surface)] hover:bg-white hover:border-transparent hover:shadow-[var(--shadow-lifted)] hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+                style={{ transitionDelay: `${i * 80}ms` }}
               >
-                {/* Step watermarked number */}
-                <div className="absolute top-3 right-4 font-extrabold text-5xl text-[#0B1F3A]/[0.06] select-none group-hover:text-amber-500/15 transition-colors font-serif">
+                {/* Watermark */}
+                <div
+                  className="absolute -top-1 -right-1 text-[70px] font-bold leading-none select-none font-serif opacity-[0.05] group-hover:opacity-[0.08] transition-opacity"
+                  style={{ color: step.color }}
+                >
                   {step.phase}
                 </div>
 
-                <div>
-                  {/* Top Badge & Icon */}
-                  <div className="flex items-center justify-between mb-5">
-                    <div className="w-12 h-12 rounded-xl bg-white border border-[#E5E7EB] shadow-sm flex items-center justify-center text-[#967016] group-hover:bg-[#0B1F3A] group-hover:text-amber-300 group-hover:scale-110 transition-all duration-300">
-                      <Icon size={22} />
-                    </div>
-                    <span className="text-[11px] font-bold text-[#967016] bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20">
-                      {step.highlight}
-                    </span>
+                {/* Icon + metric */}
+                <div className="flex items-center justify-between mb-5">
+                  <div
+                    className="w-10 h-10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                    style={{ background: `${step.color}14`, border: `1.5px solid ${step.color}35` }}
+                  >
+                    <Icon size={18} style={{ color: step.color }} strokeWidth={1.75} />
                   </div>
-
-                  <span className="text-[11px] font-bold text-[#4B5563] uppercase tracking-wider block mb-1">
-                    {step.tag}
+                  <span
+                    className="text-[10px] font-semibold px-2.5 py-1 rounded-full"
+                    style={{ color: step.color, background: `${step.color}12`, border: `1px solid ${step.color}30` }}
+                  >
+                    {step.metric}
                   </span>
-
-                  <h3
-                    className="text-lg font-bold text-[#0B1F3A] mb-3 group-hover:text-[#967016] transition-colors leading-snug"
-                    style={{ fontFamily: 'var(--font-display)' }}
-                  >
-                    {step.title}
-                  </h3>
-
-                  <p className="text-xs font-medium text-[#4B5563] leading-relaxed mb-5">
-                    {step.desc}
-                  </p>
-
-                  {/* Bullet deliverables */}
-                  <ul className="space-y-2 pt-4 border-t border-[#E5E7EB] mb-6">
-                    {step.bullets.map((b) => (
-                      <li key={b} className="flex items-start gap-2 text-xs font-semibold text-[#1F2937]">
-                        <CheckCircle2 size={14} className="text-[#967016] flex-shrink-0 mt-0.5" />
-                        <span>{b}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
 
-                <div className="pt-2">
-                  <Link
-                    to="/free-website-audit"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#967016] group-hover:text-[#0B1F3A] group-hover:gap-2.5 transition-all"
-                  >
-                    Explore Step Details <ArrowRight size={13} />
-                  </Link>
-                </div>
+                <h3
+                  className="text-base font-semibold text-[var(--color-ink)] mb-4 group-hover:text-[var(--color-accent-text)] transition-colors leading-snug"
+                  style={{ fontFamily: 'var(--font-display)' }}
+                >
+                  {step.title}
+                </h3>
+
+                <ul className="space-y-2 pt-3 border-t border-[var(--color-line)]">
+                  {step.bullets.map((b) => (
+                    <li key={b} className="flex items-center gap-2 text-xs font-medium text-[var(--color-muted)]">
+                      <span
+                        className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                        style={{ background: step.color }}
+                      />
+                      {b}
+                    </li>
+                  ))}
+                </ul>
               </article>
             )
           })}
         </div>
 
-        {/* Bottom Guarantee Banner */}
-        <div className="reveal rounded-2xl bg-[#0B1F3A] p-6 md:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-white/10">
-          <div className="flex items-center gap-4">
-            <div className="w-14 h-14 rounded-2xl bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-300 flex-shrink-0">
-              <Zap size={26} />
-            </div>
-            <div>
-              <h4 className="text-xl font-bold text-white mb-1 font-serif">
-                Ready to see what this roadmap looks like for your business?
-              </h4>
-              <p className="text-sm text-slate-200">
-                Get a custom 15-page diagnostic audit showing your competitor keyword share, UX leaks, and revenue upside.
-              </p>
-            </div>
+        {/* CTA Banner */}
+        <div className="reveal rounded-xl bg-[var(--color-navy)] p-6 md:p-8 text-white flex flex-col sm:flex-row items-center justify-between gap-5 border border-white/8 shadow-lg">
+          <div>
+            <h4 className="text-lg font-semibold text-white mb-1" style={{ fontFamily: 'var(--font-display)' }}>
+              See this roadmap applied to your business
+            </h4>
+            <p className="text-slate-400 text-sm">
+              Free 15-page diagnostic · competitor gap analysis · zero obligation.
+            </p>
           </div>
           <Link
             to="/free-website-audit"
-            className="btn btn-primary text-sm px-6 min-h-[46px] whitespace-nowrap font-bold shadow-lg"
+            className="btn btn-primary text-sm px-8 min-h-[44px] whitespace-nowrap font-semibold flex-shrink-0"
           >
-            Claim Free Audit <ArrowRight size={15} />
+            Claim Free Audit <ArrowRight size={14} />
           </Link>
         </div>
       </div>

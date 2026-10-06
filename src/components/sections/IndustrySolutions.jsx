@@ -77,25 +77,25 @@ export default function IndustrySolutions() {
   const ref = useReveal()
 
   return (
-    <section ref={ref} className="section bg-[#F7F8FA]">
+    <section ref={ref} className="section bg-[var(--color-surface)]">
       <div className="container">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
           <SectionHeading
             eyebrow="Sector Specialization"
-            title="Tailored Acquisition Strategies for Your Sector"
-            lead="We understand that a law firm, a medical group, a SaaS platform, and an ecommerce brand face vastly different commercial funnels. Our sector playbooks are engineered specifically for your market dynamics."
+            title="Industry Playbooks Built for Your Market"
+            lead="We engineer acquisition strategies for your specific industry dynamics — not generic templates."
             align="left"
             className="mb-0 max-w-2xl"
           />
           {/* Stat callout */}
-          <div className="flex-shrink-0 text-left lg:text-right bg-white p-5 rounded-2xl border border-[#E5E7EB] shadow-sm">
+          <div className="flex-shrink-0 text-left lg:text-right bg-white p-5 rounded-2xl border border-[var(--color-line)] shadow-sm">
             <span
-              className="block text-4xl lg:text-5xl font-extrabold text-[#0B1F3A]"
+              className="block text-4xl lg:text-5xl font-extrabold text-[var(--color-navy)]"
               style={{ fontFamily: 'var(--font-display)' }}
             >
               500+
             </span>
-            <span className="block text-xs font-semibold text-[#5B6575] mt-1">
+            <span className="block text-xs font-semibold text-[var(--color-muted)] mt-1">
               Sector Campaigns Scaled Across the US
             </span>
           </div>
@@ -109,7 +109,7 @@ export default function IndustrySolutions() {
                 key={ind.href + ind.label}
                 to={ind.href}
                 id={`industry-${ind.label.toLowerCase().replace(/[^a-z]/g, '-')}`}
-                className="reveal group relative rounded-2xl overflow-hidden min-h-[220px] flex flex-col justify-between p-6 hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 border border-[#E5E7EB] bg-[#0B1F3A]"
+                className="reveal group relative rounded-2xl overflow-hidden min-h-[220px] flex flex-col justify-between p-6 hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 border border-[var(--color-line)] bg-[var(--color-navy)]"
                 style={{
                   transitionDelay: `${i * 50}ms`,
                 }}
@@ -122,14 +122,14 @@ export default function IndustrySolutions() {
                 />
 
                 {/* Heavy Dark Gradient Mesh Overlay so text never blends */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#071422] via-[#071422]/85 to-[#071422]/60 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#090F1C] via-[#090F1C]/85 to-[#090F1C]/60 pointer-events-none" />
 
                 {/* Top Sector Icon */}
                 <div className="relative z-10 flex items-center justify-between">
-                  <div className="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-amber-300 group-hover:scale-110 group-hover:bg-amber-400 group-hover:text-[#071422] transition-all duration-300">
+                  <div className="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-[var(--color-gold-bright)] group-hover:scale-110 group-hover:bg-[var(--color-accent)] group-hover:text-white transition-all duration-300">
                     <Icon size={20} />
                   </div>
-                  <span className="text-[10px] text-amber-300 font-bold uppercase tracking-wider bg-white/10 px-2.5 py-1 rounded-full border border-white/15 backdrop-blur-sm">
+                  <span className="text-[10px] text-[var(--color-gold-bright)] font-bold uppercase tracking-wider bg-white/10 px-2.5 py-1 rounded-full border border-white/15 backdrop-blur-sm">
                     Sector Playbook
                   </span>
                 </div>
@@ -145,7 +145,7 @@ export default function IndustrySolutions() {
                   <p className="text-xs font-medium text-slate-200 leading-relaxed mb-3">
                     {ind.desc}
                   </p>
-                  <span className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-300 group-hover:gap-2.5 transition-all">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[var(--color-gold-bright)] group-hover:gap-2.5 transition-all">
                     Explore Strategy <ArrowRight size={13} />
                   </span>
                 </div>

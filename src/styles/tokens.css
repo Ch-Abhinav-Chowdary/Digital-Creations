@@ -1,39 +1,55 @@
-/* Design tokens — navy, gold, type, space, elevation */
+/* Design tokens — warm earthy palette, human-crafted typography */
 
 @theme {
-  --color-navy: #0b1f3a;
-  --color-navy-2: #13294b;
-  --color-navy-deep: #071422;
-  --color-accent: #c4a24a;
-  --color-accent-hover: #b08c38;
-  --color-accent-text: #967016;
-  --color-gold-soft: #e8d5a3;
-  --color-gold-bright: #fcd34d;
-  --color-ink: #111827;
-  --color-muted: #4b5563;
-  --color-bg: #ffffff;
-  --color-surface: #f8f6f0;
-  --color-line: #e2ded5;
-  --color-cream: #faf8f3;
+  /* ── Colour: Navy (warmer, less cold-corporate) ── */
+  --color-navy: #0E1C2F;
+  --color-navy-2: #162840;
+  --color-navy-deep: #090F1C;
 
-  --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
-  --font-body: "Plus Jakarta Sans", Inter, system-ui, sans-serif;
+  /* ── Colour: Amber/Gold (earthier, more organic) ── */
+  --color-accent: #C08930;
+  --color-accent-hover: #A0721F;
+  --color-accent-text: #895C0A;       /* On white surfaces */
+  --color-gold-soft: #EDD9A3;
+  --color-gold-bright: #E8B84B;
 
-  --radius: 14px;
-  --radius-sm: 10px;
-  --radius-lg: 22px;
+  /* ── Colour: Light surfaces (warm white/parchment) ── */
+  --color-ink: #1A1714;               /* Warm charcoal, not pure black */
+  --color-muted: #6B635C;             /* Warm stone gray */
+  --color-bg: #FAFAF8;                /* Warm white — not clinical */
+  --color-surface: #F2EDE3;           /* Parchment surface */
+  --color-line: #DDD8CE;              /* Warm divider */
+  --color-cream: #F7F2E9;             /* Off-white sections */
+
+  /* ── Section accent palette (3 curated tones — not rainbow) ── */
+  --color-tone-amber: #C08930;        /* Brand amber */
+  --color-tone-steel: #2D6E8F;        /* Deep steel blue */
+  --color-tone-forest: #346F58;       /* Forest green */
+  --color-tone-terracotta: #B85C38;   /* Earthy terracotta */
+
+  /* ── Typography: Human-crafted pairing ── */
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+
+  /* ── Radii ── */
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 18px;
   --radius-full: 999px;
 
-  --shadow-card: 0 1px 3px rgba(11, 31, 58, 0.06), 0 12px 32px rgba(11, 31, 58, 0.08);
-  --shadow-lifted: 0 10px 24px rgba(11, 31, 58, 0.08), 0 28px 64px rgba(11, 31, 58, 0.14);
-  --shadow-gold: 0 10px 28px rgba(196, 162, 74, 0.35);
+  /* ── Shadows ── */
+  --shadow-card: 0 1px 3px rgba(14, 28, 47, 0.05), 0 8px 24px rgba(14, 28, 47, 0.07);
+  --shadow-lifted: 0 8px 20px rgba(14, 28, 47, 0.07), 0 24px 56px rgba(14, 28, 47, 0.12);
+  --shadow-gold: 0 8px 24px rgba(192, 137, 48, 0.30);
 
+  /* ── Easing ── */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
 
+  /* ── Layout ── */
   --container: 1180px;
   --gutter: clamp(18px, 4.5vw, 36px);
-  --section: clamp(72px, 9vw, 132px);
+  --section: clamp(72px, 9vw, 128px);
   --header-h: 72px;
   --topbar-h: 36px;
 }

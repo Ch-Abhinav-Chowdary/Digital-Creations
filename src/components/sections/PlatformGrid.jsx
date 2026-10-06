@@ -1,7 +1,7 @@
 // src/components/sections/PlatformGrid.jsx
 import { Link } from 'react-router-dom'
 import { useReveal } from '../ui/useReveal'
-import SectionHeading from '../ui/SectionHeading'
+
 
 const PLATFORMS = [
   {
@@ -103,11 +103,16 @@ export default function PlatformGrid() {
   return (
     <section ref={ref} className="section bg-white">
       <div className="container">
-        <SectionHeading
-          eyebrow="Technology Architecture"
-          title="Platforms We Engineer, Scale & Optimise"
-          lead="We build on battle-tested frameworks to give your marketing engine unmatched speed, security, and conversion leverage."
-        />
+        <div className="text-center mb-12 max-w-2xl mx-auto">
+          <p className="eyebrow justify-center">Tech Stack</p>
+          <h2 style={{ fontFamily: 'var(--font-display)' }}>
+            Platforms We Engineer &amp; Scale
+          </h2>
+          <p className="text-[var(--color-muted)] text-base mt-3">
+            Battle-tested frameworks for unmatched speed, security, and conversion leverage.
+          </p>
+        </div>
+
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-5">
           {PLATFORMS.map((p, i) => {
@@ -117,19 +122,19 @@ export default function PlatformGrid() {
                 key={p.href}
                 to={p.href}
                 id={`platform-${p.label.toLowerCase().replace(/[\s/]+/g, '-')}`}
-                className="reveal group flex flex-col items-center text-center p-6 rounded-xl border border-[#E5E7EB] bg-[#F7F8FA] hover:border-[#B8963E]/60 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="reveal group flex flex-col items-center text-center p-6 rounded-xl border border-[var(--color-line)] bg-[var(--color-surface)] hover:border-[var(--color-accent)] hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
                 style={{ transitionDelay: `${i * 50}ms` }}
               >
-                <div className="w-14 h-14 rounded-2xl bg-white border border-[#E5E7EB] shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-md transition-all duration-300">
+                <div className="w-14 h-14 rounded-2xl bg-white border border-[var(--color-line)] shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 group-hover:shadow-md transition-all duration-300">
                   <Icon />
                 </div>
                 <h3
-                  className="text-base font-bold text-[#0B1F3A] mb-1.5 group-hover:text-[#967016] transition-colors"
+                  className="text-base font-bold text-[var(--color-navy)] mb-1.5 group-hover:text-[var(--color-accent)] transition-colors"
                   style={{ fontFamily: 'var(--font-display)' }}
                 >
                   {p.label}
                 </h3>
-                <p className="text-xs font-medium text-[#4B5563] leading-relaxed">{p.desc}</p>
+                <p className="text-xs font-medium text-[var(--color-muted)] leading-relaxed">{p.desc}</p>
               </Link>
             )
           })}

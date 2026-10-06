@@ -27,7 +27,7 @@ function MegaMenu({ item, isOpen, onClose }) {
                     <Link
                       to={link.href}
                       onClick={onClose}
-                      className="block py-1.5 px-2 text-sm text-[#1F2937] rounded hover:bg-[#F7F8FA] hover:text-[#B8963E] transition-colors duration-150"
+                      className="block py-1.5 px-2 text-sm text-[var(--color-ink)] rounded hover:bg-[var(--color-surface)] hover:text-[var(--color-accent-text)] transition-colors duration-150"
                     >
                       {link.label}
                     </Link>
@@ -37,11 +37,11 @@ function MegaMenu({ item, isOpen, onClose }) {
             </div>
           ))}
         </div>
-        <div className="border-t border-[#E5E7EB] px-6 py-3 bg-[#F7F8FA]">
+        <div className="border-t border-[var(--color-line)] px-6 py-3 bg-[var(--color-surface)]">
           <Link
             to={item.href}
             onClick={onClose}
-            className="text-sm font-semibold text-[#B8963E] hover:underline inline-flex items-center gap-1"
+            className="text-sm font-semibold text-[var(--color-accent-text)] hover:underline inline-flex items-center gap-1"
           >
             View all {item.label} →
           </Link>
@@ -55,16 +55,16 @@ function MegaMenu({ item, isOpen, onClose }) {
 function MobileNavItem({ item, onClose }) {
   const [expanded, setExpanded] = useState(false)
   return (
-    <div className="border-b border-[#E5E7EB] last:border-0">
+    <div className="border-b border-[var(--color-line)] last:border-0">
       <button
-        className="w-full flex items-center justify-between px-6 py-4 text-left font-semibold text-[#0B1F3A] text-base"
+        className="w-full flex items-center justify-between px-6 py-4 text-left font-semibold text-[var(--color-navy)] text-base"
         onClick={() => setExpanded((v) => !v)}
         aria-expanded={expanded}
       >
         {item.label}
         <ChevronDown
           size={18}
-          className={`text-[#B8963E] transition-transform duration-200 ${expanded ? 'rotate-180' : ''}`}
+          className={`text-[var(--color-accent)] transition-transform duration-200 ${expanded ? 'rotate-180' : ''}`}
         />
       </button>
       {expanded && (
@@ -78,7 +78,7 @@ function MobileNavItem({ item, onClose }) {
                     <Link
                       to={link.href}
                       onClick={onClose}
-                      className="block py-2 min-h-[44px] flex items-center text-sm text-[#1F2937] hover:text-[#B8963E] transition-colors"
+                      className="block py-2 min-h-[44px] flex items-center text-sm text-[var(--color-ink)] hover:text-[var(--color-accent-text)] transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -142,14 +142,14 @@ export default function Header() {
           <div className="container flex items-center justify-end gap-6 py-2">
             <a
               href={`tel:${SITE.phone.replace(/\D/g, '')}`}
-              className="flex items-center gap-1.5 hover:text-[#B8963E] transition-colors"
+              className="flex items-center gap-1.5 hover:text-[var(--color-gold-bright)] transition-colors"
             >
               <Phone size={12} />
               {SITE.phone}
             </a>
             <a
               href={`mailto:${SITE.email}`}
-              className="hover:text-[#B8963E] transition-colors"
+              className="hover:text-[var(--color-gold-bright)] transition-colors"
             >
               {SITE.email}
             </a>
@@ -191,7 +191,7 @@ export default function Header() {
                     {item.label}
                     <ChevronDown
                       size={14}
-                      className={`transition-transform duration-200 ${activeMenu === item.id ? 'rotate-180 text-[#B8963E]' : ''}`}
+                      className={`transition-transform duration-200 ${activeMenu === item.id ? 'rotate-180 text-[var(--color-accent)]' : ''}`}
                     />
                   </button>
                   <div
@@ -210,7 +210,7 @@ export default function Header() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
-              <Link to="/contact-us" className="text-sm font-medium text-[#1F2937] hover:text-[#B8963E] transition-colors">
+              <Link to="/contact-us" className="text-sm font-medium text-[var(--color-ink)] hover:text-[var(--color-accent-text)] transition-colors">
                 Contact
               </Link>
               <Link to="/free-website-audit" className="btn btn-primary btn-inline text-sm px-5 min-h-[40px]">
@@ -230,7 +230,7 @@ export default function Header() {
                 aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={mobileOpen}
                 aria-controls="mobile-drawer"
-                className="w-10 h-10 flex items-center justify-center rounded text-[#0B1F3A] hover:bg-[#F7F8FA] transition-colors"
+                className="w-10 h-10 flex items-center justify-center rounded text-[var(--color-navy)] hover:bg-[var(--color-surface)] transition-colors"
                 onClick={() => setMobileOpen((v) => !v)}
               >
                 {mobileOpen ? <X size={22} /> : <Menu size={22} />}
@@ -261,7 +261,7 @@ export default function Header() {
           }`}
         >
           {/* Drawer header */}
-          <div className="flex items-center justify-between px-6 h-16 border-b border-[#E5E7EB] flex-shrink-0">
+          <div className="flex items-center justify-between px-6 h-16 border-b border-[var(--color-line)] flex-shrink-0">
             <Link to="/" onClick={() => setMobileOpen(false)} aria-label={`${SITE.name} — Home`}>
               <img
                 src="/images/brand/logo-dark.svg"
@@ -273,7 +273,7 @@ export default function Header() {
             </Link>
             <button
               aria-label="Close menu"
-              className="w-10 h-10 flex items-center justify-center rounded hover:bg-[#F7F8FA]"
+              className="w-10 h-10 flex items-center justify-center rounded hover:bg-[var(--color-surface)] text-[var(--color-navy)]"
               onClick={() => setMobileOpen(false)}
             >
               <X size={20} />
@@ -288,7 +288,7 @@ export default function Header() {
           </div>
 
           {/* Drawer footer */}
-          <div className="px-6 py-5 border-t border-[#E5E7EB] space-y-3 flex-shrink-0">
+          <div className="px-6 py-5 border-t border-[var(--color-line)] space-y-3 flex-shrink-0">
             <Link
               to="/free-website-audit"
               onClick={() => setMobileOpen(false)}
@@ -305,7 +305,7 @@ export default function Header() {
             </Link>
             <a
               href={`tel:${SITE.phone.replace(/\D/g, '')}`}
-              className="flex items-center justify-center gap-2 text-sm text-[#5B6575]"
+              className="flex items-center justify-center gap-2 text-sm text-[var(--color-muted)]"
             >
               <Phone size={14} />
               {SITE.phone}

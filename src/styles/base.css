@@ -14,20 +14,24 @@
   body {
     margin: 0;
     font-family: var(--font-body);
-    font-size: 1.0625rem;
-    line-height: 1.7;
+    font-size: 1rem;
+    line-height: 1.72;
     color: var(--color-ink);
-    background: var(--color-cream);
+    background: var(--color-bg);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    /* DM Sans optical size for body text */
+    font-optical-sizing: auto;
   }
 
   ::selection {
-    background: rgba(196, 162, 74, 0.28);
+    background: rgba(192, 137, 48, 0.22);
     color: var(--color-navy);
   }
 
+  /* ── Headings: Fraunces is an optical-size variable serif — looks genuinely crafted ── */
   h1,
   h2,
   h3,
@@ -36,22 +40,19 @@
   h6 {
     font-family: var(--font-display);
     font-weight: 600;
-    line-height: 1.12;
-    letter-spacing: -0.02em;
+    line-height: 1.15;
+    /* Fraunces works best with neutral-to-slight tracking — not negative */
+    letter-spacing: -0.01em;
     color: inherit;
     text-wrap: balance;
     margin: 0;
+    font-optical-sizing: auto;
   }
 
-  h1 {
-    font-size: clamp(2.35rem, 4.6vw + 0.8rem, 4.35rem);
-  }
-  h2 {
-    font-size: clamp(1.7rem, 2.4vw + 0.9rem, 2.85rem);
-  }
-  h3 {
-    font-size: clamp(1.2rem, 1vw + 0.95rem, 1.65rem);
-  }
+  h1 { font-size: clamp(2.1rem, 4vw + 0.75rem, 3.85rem); }
+  h2 { font-size: clamp(1.6rem, 2.2vw + 0.85rem, 2.6rem);  }
+  h3 { font-size: clamp(1.15rem, 0.9vw + 0.9rem, 1.5rem);  }
+  h4 { font-size: clamp(1rem, 0.5vw + 0.85rem, 1.2rem);    }
 
   p {
     margin: 0;
@@ -67,8 +68,13 @@
     max-width: 100%;
     height: auto;
   }
+
+  strong {
+    font-weight: 600;
+  }
 }
 
+/* ── Layout ── */
 .container {
   width: min(100% - 2 * var(--gutter), var(--container));
   margin-inline: auto;
