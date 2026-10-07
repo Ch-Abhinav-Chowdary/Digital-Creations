@@ -36,7 +36,7 @@ Only **5 unique photographic/graphic assets** exist (plus brand SVGs). Industry 
 | `industries/technology.jpg` | U5 |
 | `portfolio/law-firm-thumb.jpg` | U5 |
 
-**Video:** none provided.  
+**Video:** `public/video/upshoot-media-logo-transition.mp4` (1920×1080, 4.5s, H.264, 114 KB) is used as the homepage hero brand reveal. Poster: `public/images/brand/upshoot-media-transition-poster.jpg`.  
 **Additional photos:** none found outside the paths above.
 
 ---
@@ -47,7 +47,7 @@ Only **5 unique photographic/graphic assets** exist (plus brand SVGs). Industry 
 |---|---|---|---|
 | `home/hero-bg.jpg` (U1) | `#8 home/hero-bg` | Left third is calm navy — ideal for headline; gold chart anchors right | `72,42` |
 | crop of U1 | `#9 home/hero-mobile` | Vertical crop keeping chart peak + navy field for text | `68,40` |
-| — | `#10–11 hero video` | **No video provided** | — |
+| `public/video/upshoot-media-logo-transition.mp4` | `#10–11 hero video` | Short animated Upshoot Media logo reveal; used as a one-time muted hero feature | `center,50` |
 | `home/service-seo.jpg` (U2) | `#13 home/service-seo` | Exact match: organic search dashboard on laptop | `50,42` |
 | `home/service-ppc.jpg` (U3) | `#14 home/service-ppc` | Exact match: paid / Google Ads dashboard | `50,40` |
 | crop of U4 | `#15 home/service-online-marketing` | Meeting + channel-mix whiteboard = multi-channel marketing | `48,45` |
@@ -76,10 +76,10 @@ Only **5 unique photographic/graphic assets** exist (plus brand SVGs). Industry 
 | **Below 2× for hero** (have 1376w; hero display 1920 wants ~3840 for true 2×) | U1 | Export best-available 1×/1.5×; flag in ASSETS_TODO for higher-res master |
 | **Wrong aspect for industry 4:5** | All industry copies are landscape | Smart-crop to 640×800 (+2×) using focus points; heavy navy overlay for text |
 | **Near-duplicates / wrong subject** | beauty←SEO desk; food/healthcare←meeting; education←abstract; real-estate←law site | **Do not present as authentic industry photos.** Use CSS premium placeholders for those slots; list needed shoots in ASSETS_TODO |
-| **Slots with no matching image** | Online marketing (weak), ecommerce service, design variants ×3, video, dental/tourism/nonprofit/restaurant, blog covers, author, trust badges, apple-touch, most case studies, portfolio ×5 | Leave premium placeholder / gradient; document in ASSETS_TODO |
+| **Slots with no matching image** | Online marketing (weak), ecommerce service, design variants ×3, dental/tourism/nonprofit/restaurant, blog covers, author, trust badges, apple-touch, most case studies, portfolio ×5 | Leave premium placeholder / gradient; document in ASSETS_TODO |
 | **Busy images under text** | U4 (whiteboard + faces), U2/U3 (dashboard UI) | Navy gradient overlay token `--img-overlay`; never place body copy over screen pixels |
 | **U5 mislabeled `saas-platform-card`** | Filename says SaaS; content is law firm | Keep filename in assets-source; map to legal/portfolio slots; update alt text in imageMeta |
-| **No hero video** | #10–11 | Mobile/desktop use hero image/poster only |
+| **Hero video** | #10–11 | Use the logo reveal once; reduced-motion preference shows the poster with optional controls |
 
 ---
 
@@ -87,7 +87,7 @@ Only **5 unique photographic/graphic assets** exist (plus brand SVGs). Industry 
 
 | Category | Filled with real media | Premium placeholder + ASSETS_TODO |
 |---|---|---|
-| Hero + mobile crop | Yes (U1) | Video poster/loop |
+| Hero + mobile crop | Yes (U1) | Logo reveal video + poster added |
 | Core service cards | SEO, PPC yes; Online/Ecommerce temporary or placeholder | Prefer dedicated shoots |
 | Design cards | One mockup (U5) reused | Unique redesign/ecom/custom shots |
 | Industry tiles | legal, technology, ecommerce (temp) | beauty, healthcare, food, education, real-estate, dental, tourism, nonprofit, restaurant |

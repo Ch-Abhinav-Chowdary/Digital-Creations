@@ -1,31 +1,29 @@
-/* Design tokens — warm earthy palette, human-crafted typography */
+/* Brand tokens — Upshoot Media navy, green, and white palette */
 
 @theme {
-  /* ── Colour: Navy (warmer, less cold-corporate) ── */
-  --color-navy: #0E1C2F;
-  --color-navy-2: #162840;
-  --color-navy-deep: #090F1C;
+  /* ── Brand navy ── */
+  --color-navy: #071735;
+  --color-navy-2: #10254A;
+  --color-navy-deep: #061127;
 
-  /* ── Colour: Amber/Gold (earthier, more organic) ── */
-  --color-accent: #C08930;
-  --color-accent-hover: #A0721F;
-  --color-accent-text: #895C0A;       /* On white surfaces */
-  --color-gold-soft: #EDD9A3;
-  --color-gold-bright: #E8B84B;
+  /* ── Brand green ── */
+  --color-accent: #00D98B;
+  --color-accent-hover: #00B875;
+  --color-accent-text: #007A4B;       /* On white surfaces */
+  --color-green-soft: #B8F5DC;
+  --color-green-bright: #00E89A;
 
-  /* ── Colour: Light surfaces (warm white/parchment) ── */
-  --color-ink: #1A1714;               /* Warm charcoal, not pure black */
-  --color-muted: #6B635C;             /* Warm stone gray */
-  --color-bg: #FAFAF8;                /* Warm white — not clinical */
-  --color-surface: #F2EDE3;           /* Parchment surface */
-  --color-line: #DDD8CE;              /* Warm divider */
-  --color-cream: #F7F2E9;             /* Off-white sections */
+  /* ── White and neutral surfaces ── */
+  --color-ink: #071735;
+  --color-muted: #5B6575;
+  --color-bg: #FFFFFF;
+  --color-surface: #F5F8FB;
+  --color-line: #DFE6EF;
+  --color-cream: #F7FAFC;
 
-  /* ── Section accent palette (3 curated tones — not rainbow) ── */
-  --color-tone-amber: #C08930;        /* Brand amber */
-  --color-tone-steel: #2D6E8F;        /* Deep steel blue */
-  --color-tone-forest: #346F58;       /* Forest green */
-  --color-tone-terracotta: #B85C38;   /* Earthy terracotta */
+  /* ── Supporting tones ── */
+  --color-tone-green: #00D98B;
+  --color-tone-forest: #008A55;
 
   /* ── Typography: Human-crafted pairing ── */
   --font-display: "Fraunces", "Georgia", serif;
@@ -38,9 +36,9 @@
   --radius-full: 999px;
 
   /* ── Shadows ── */
-  --shadow-card: 0 1px 3px rgba(14, 28, 47, 0.05), 0 8px 24px rgba(14, 28, 47, 0.07);
-  --shadow-lifted: 0 8px 20px rgba(14, 28, 47, 0.07), 0 24px 56px rgba(14, 28, 47, 0.12);
-  --shadow-gold: 0 8px 24px rgba(192, 137, 48, 0.30);
+  --shadow-card: 0 1px 3px rgba(7, 23, 53, 0.05), 0 8px 24px rgba(7, 23, 53, 0.07);
+  --shadow-lifted: 0 8px 20px rgba(7, 23, 53, 0.07), 0 24px 56px rgba(7, 23, 53, 0.12);
+  --shadow-green: 0 8px 24px rgba(0, 217, 139, 0.24);
 
   /* ── Easing ── */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);

@@ -27,7 +27,7 @@ export const INDUSTRIES = [
       { q: 'What is your approach to CRO?', a: 'We run structured A/B tests on PDPs, checkout sequences, and bottom-sheet drawers to maximize basket size.' },
     ],
     seo: {
-      title: 'Ecommerce Marketing Agency | Varun Digitals',
+      title: 'Ecommerce Marketing Agency | Upshoot Media',
       description: 'Integrated ecommerce marketing — SEO, PPC, CRO and feed automation — engineered to scale revenue and build high customer lifetime value.',
     },
   },
@@ -56,7 +56,7 @@ export const INDUSTRIES = [
       { q: 'How do you handle medical content review?', a: 'All health copy is checked against clinical guidelines and authoritative medical entities.' },
     ],
     seo: {
-      title: 'Healthcare Digital Marketing Agency | Varun Digitals',
+      title: 'Healthcare Digital Marketing Agency | Upshoot Media',
       description: 'Compliant digital marketing for healthcare providers: Local SEO, search ads, and authority content that drives new patient appointments.',
     },
   },
@@ -85,7 +85,7 @@ export const INDUSTRIES = [
       { q: 'How do you generate motivated home seller leads?', a: 'Via instant home valuation landing pages, targeted local search ads, and local authority content.' },
     ],
     seo: {
-      title: 'Real Estate Digital Marketing Agency | Varun Digitals',
+      title: 'Real Estate Digital Marketing Agency | Upshoot Media',
       description: 'Real estate marketing services — Local SEO, Google Ads, and custom websites — that generate motivated seller and buyer inquiries.',
     },
   },
@@ -114,7 +114,7 @@ export const INDUSTRIES = [
       { q: 'How do you establish firm authority?', a: 'Through verified case verdict showcases, attorney thought leadership, and client video reviews.' },
     ],
     seo: {
-      title: 'Legal Services Digital Marketing Agency | Varun Digitals',
+      title: 'Legal Services Digital Marketing Agency | Upshoot Media',
       description: 'Compliant digital marketing for law firms: Local SEO, Google Ads, and high-converting websites that generate high-value client cases.',
     },
   },
@@ -143,7 +143,7 @@ export const INDUSTRIES = [
       { q: 'Can you target specific dining dayparts?', a: 'Yes. Ad schedules are automated to bid aggressively prior to lunch and dinner rush hours.' },
     ],
     seo: {
-      title: 'Food & Beverage Marketing Agency | Varun Digitals',
+      title: 'Food & Beverage Marketing Agency | Upshoot Media',
       description: 'Digital marketing for restaurants and culinary brands — Local SEO, direct order conversion, and paid ads that protect your margins.',
     },
   },
@@ -172,7 +172,7 @@ export const INDUSTRIES = [
       { q: 'Do you manage LinkedIn and Google Search Ads?', a: 'Yes. We deploy high-intent search ads paired with account-based LinkedIn matching.' },
     ],
     seo: {
-      title: 'Technology & SaaS Marketing Agency | Varun Digitals',
+      title: 'Technology & SaaS Marketing Agency | Upshoot Media',
       description: 'Demand generation and technical SEO for software and technology companies — built to drive qualified MQLs and scalable MRR.',
     },
   },
@@ -201,7 +201,7 @@ export const INDUSTRIES = [
       { q: 'Can you improve returning customer rate?', a: 'Yes, using segmented Klaviyo email/SMS workflows and personalized replenishment triggers.' },
     ],
     seo: {
-      title: 'Beauty & Fashion Digital Marketing | Varun Digitals',
+      title: 'Beauty & Fashion Digital Marketing | Upshoot Media',
       description: 'Digital marketing for beauty and fashion brands — Paid social, ecommerce SEO, and creator funnels that scale DTC revenue.',
     },
   },

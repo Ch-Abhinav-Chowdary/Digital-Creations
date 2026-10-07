@@ -27,7 +27,7 @@ export default function FAQAccordion({ items = [] }) {
                 <span className="pr-4">{item.q}</span>
                 <ChevronDown
                   size={16}
-                  className={`flex-shrink-0 text-[var(--color-accent)] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+                  className={`flex-shrink-0 text-[var(--color-accent-text)] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
                   aria-hidden="true"
                 />
               </button>

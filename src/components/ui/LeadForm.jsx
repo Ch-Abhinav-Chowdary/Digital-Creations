@@ -39,8 +39,8 @@ export default function LeadForm({ formId = 'lead', showMessage = false, submitL
   if (submitted) {
     return (
       <div className="text-center py-6">
-        <CheckCircle size={40} className="text-[#B8963E] mx-auto mb-3" />
-        <h3 className="text-[#0B1F3A] font-semibold mb-1" style={{ fontFamily: 'var(--font-display)' }}>
+        <CheckCircle size={40} className="text-[#007A4B] mx-auto mb-3" />
+        <h3 className="text-[#071735] font-semibold mb-1" style={{ fontFamily: 'var(--font-display)' }}>
           Thank you — we will be in touch shortly.
         </h3>
         <p className="text-sm text-[#5B6575]">

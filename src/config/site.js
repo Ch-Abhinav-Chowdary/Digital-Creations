@@ -2,10 +2,10 @@
 // SINGLE SOURCE OF TRUTH — brand values. Change these; never hard-code elsewhere.
 
 export const SITE = {
-  name: 'Varun Digitals',
-  tagline: 'Results-Driven Digital Marketing & Web Design for Modern Brands',
+  name: 'Upshoot Media',
+  tagline: 'Digital marketing and web design that move your brand up.',
   description:
-    'Varun Digitals is a full-service digital marketing and web design agency helping businesses grow through data-driven SEO, PPC, creative design, and conversion-focused development.',
+    'Upshoot Media helps businesses grow through digital marketing, creative design, and conversion-focused web development.',
 
   // Contact — replace with real values before launch
   phone: '+1 (800) 000-0000',

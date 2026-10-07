@@ -28,7 +28,7 @@ export default function PrivacyPage() {
         <div className="container max-w-4xl">
           <div className="prose prose-slate max-w-none text-[#1F2937] space-y-8 leading-relaxed">
             <div>
-              <h2 className="text-2xl font-serif font-bold text-[#0B1F3A] mb-3">
+              <h2 className="text-2xl font-serif font-bold text-[#071735] mb-3">
                 1. Information We Collect
               </h2>
               <p className="text-base text-[#5B6575] mb-4">
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-serif font-bold text-[#0B1F3A] mb-3">
+              <h2 className="text-2xl font-serif font-bold text-[#071735] mb-3">
                 2. How We Use Your Information
               </h2>
               <p className="text-base text-[#5B6575] mb-4">
@@ -63,7 +63,7 @@ export default function PrivacyPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-serif font-bold text-[#0B1F3A] mb-3">
+              <h2 className="text-2xl font-serif font-bold text-[#071735] mb-3">
                 3. Disclosure & Third-Party Processors
               </h2>
               <p className="text-base text-[#5B6575]">
@@ -72,7 +72,7 @@ export default function PrivacyPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-serif font-bold text-[#0B1F3A] mb-3">
+              <h2 className="text-2xl font-serif font-bold text-[#071735] mb-3">
                 4. Data Security & Retention
               </h2>
               <p className="text-base text-[#5B6575]">
@@ -81,7 +81,7 @@ export default function PrivacyPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-serif font-bold text-[#0B1F3A] mb-3">
+              <h2 className="text-2xl font-serif font-bold text-[#071735] mb-3">
                 5. Your Legal Rights (GDPR & CCPA/CPRA)
               </h2>
               <p className="text-base text-[#5B6575] mb-4">
@@ -96,14 +96,14 @@ export default function PrivacyPage() {
             </div>
 
             <div className="p-6 bg-[#F7F8FA] rounded-[6px] border border-[#E5E7EB]">
-              <h3 className="text-lg font-bold text-[#0B1F3A] mb-2">
+              <h3 className="text-lg font-bold text-[#071735] mb-2">
                 Privacy Inquiries & Data Requests
               </h3>
               <p className="text-sm text-[#5B6575] mb-3">
                 To exercise any privacy rights or ask questions regarding this policy, please reach our compliance team directly:
               </p>
-              <p className="text-sm text-[#0B1F3A] font-medium">
-                Email: <a href={`mailto:${SITE.email}`} className="text-[#B8963E] underline">{SITE.email}</a>
+              <p className="text-sm text-[#071735] font-medium">
+                Email: <a href={`mailto:${SITE.email}`} className="text-[#007A4B] underline">{SITE.email}</a>
                 <br />
                 Address: {SITE.address.street}, {SITE.address.city}, {SITE.address.state} {SITE.address.zip}
               </p>

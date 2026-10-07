@@ -122,8 +122,8 @@ export default function BlogPage() {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-4 py-2 rounded-[4px] text-xs font-semibold tracking-wide transition-all duration-150 ${
                   activeCategory === cat
-                    ? 'bg-[#0B1F3A] text-white shadow-sm'
-                    : 'bg-[#F7F8FA] text-[#5B6575] hover:bg-[#E5E7EB] hover:text-[#0B1F3A]'
+                    ? 'bg-[#071735] text-white shadow-sm'
+                    : 'bg-[#F7F8FA] text-[#5B6575] hover:bg-[#E5E7EB] hover:text-[#071735]'
                 }`}
               >
                 {cat}
@@ -139,20 +139,20 @@ export default function BlogPage() {
           {/* Featured Article (when viewing All) */}
           {activeCategory === 'All' && featured && (
             <div className="mb-12 bg-white rounded-xl border border-[#E5E7EB] overflow-hidden hover:shadow-xl transition-all duration-300 grid lg:grid-cols-12">
-              <div className="lg:col-span-5 relative h-64 lg:h-auto bg-[#0B1F3A] overflow-hidden">
+              <div className="lg:col-span-5 relative h-64 lg:h-auto bg-[#071735] overflow-hidden">
                 <img
                   src="/images/home/service-seo.jpg"
                   alt={featured.title}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute top-4 left-4 bg-[#B8963E] text-[#0B1F3A] font-bold text-xs uppercase px-3 py-1 rounded shadow">
+                <div className="absolute top-4 left-4 bg-[#00D98B] text-[#071735] font-bold text-xs uppercase px-3 py-1 rounded shadow">
                   Featured Brief
                 </div>
               </div>
               <div className="lg:col-span-7 p-8 lg:p-10 flex flex-col justify-between">
                 <div>
                   <div className="flex flex-wrap items-center gap-3 text-xs text-[#5B6575] mb-3">
-                    <span className="flex items-center gap-1 font-semibold text-[#B8963E]">
+                    <span className="flex items-center gap-1 font-semibold text-[#007A4B]">
                       <Tag size={13} /> {featured.category}
                     </span>
                     <span className="flex items-center gap-1">
@@ -163,7 +163,7 @@ export default function BlogPage() {
                     </span>
                   </div>
 
-                  <h2 className="text-2xl lg:text-3xl font-serif font-bold text-[#0B1F3A] mb-3 leading-tight hover:text-[#B8963E] transition-colors">
+                  <h2 className="text-2xl lg:text-3xl font-serif font-bold text-[#071735] mb-3 leading-tight hover:text-[#007A4B] transition-colors">
                     {featured.title}
                   </h2>
                   <p className="text-sm text-[#5B6575] leading-relaxed mb-6">
@@ -177,7 +177,7 @@ export default function BlogPage() {
                   </span>
                   <Link
                     to="/free-website-audit"
-                    className="text-xs font-bold text-[#B8963E] hover:underline inline-flex items-center gap-1"
+                    className="text-xs font-bold text-[#007A4B] hover:underline inline-flex items-center gap-1"
                   >
                     Discuss your organic roadmap <ArrowRight size={14} />
                   </Link>
@@ -202,15 +202,15 @@ export default function BlogPage() {
               return (
                 <article
                   key={article.id}
-                  className="bg-white rounded-xl border border-[#E5E7EB] overflow-hidden flex flex-col justify-between hover:border-[#B8963E]/50 hover:shadow-xl transition-all duration-300 group"
+                  className="bg-white rounded-xl border border-[#E5E7EB] overflow-hidden flex flex-col justify-between hover:border-[#008A55]/50 hover:shadow-xl transition-all duration-300 group"
                 >
-                  <div className="h-44 bg-[#0B1F3A] relative overflow-hidden">
+                  <div className="h-44 bg-[#071735] relative overflow-hidden">
                     <img
                       src={imgUrl}
                       alt={article.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-3 left-3 bg-[#0B1F3A]/90 backdrop-blur-sm text-[#B8963E] text-[11px] font-bold px-2.5 py-1 rounded">
+                    <div className="absolute top-3 left-3 bg-[#071735]/90 backdrop-blur-sm text-[#00E89A] text-[11px] font-bold px-2.5 py-1 rounded">
                       {article.category}
                     </div>
                   </div>
@@ -225,7 +225,7 @@ export default function BlogPage() {
                           <Clock size={12} /> {article.readTime}
                         </span>
                       </div>
-                      <h3 className="text-base font-serif font-bold text-[#0B1F3A] mb-2.5 leading-snug group-hover:text-[#B8963E] transition-colors">
+                      <h3 className="text-base font-serif font-bold text-[#071735] mb-2.5 leading-snug group-hover:text-[#007A4B] transition-colors">
                         {article.title}
                       </h3>
                       <p className="text-xs text-[#5B6575] leading-relaxed mb-4">
@@ -237,7 +237,7 @@ export default function BlogPage() {
                       <span className="text-[11px] truncate max-w-[130px]">{article.author}</span>
                       <Link
                         to="/contact-us"
-                        className="font-bold text-[#0B1F3A] group-hover:text-[#B8963E] inline-flex items-center gap-1 transition-colors"
+                        className="font-bold text-[#071735] group-hover:text-[#007A4B] inline-flex items-center gap-1 transition-colors"
                       >
                         Read brief <ArrowRight size={12} />
                       </Link>

@@ -129,7 +129,7 @@ export default function PlatformGrid() {
                   <Icon />
                 </div>
                 <h3
-                  className="text-base font-bold text-[var(--color-navy)] mb-1.5 group-hover:text-[var(--color-accent)] transition-colors"
+                  className="text-base font-bold text-[var(--color-navy)] mb-1.5 group-hover:text-[var(--color-accent-text)] transition-colors"
                   style={{ fontFamily: 'var(--font-display)' }}
                 >
                   {p.label}

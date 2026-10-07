@@ -9,7 +9,7 @@ const BLOCKS = [
     icon: Search,
     title: 'SEO & Lead Generation',
     tagline: 'Organic visibility that compounds over time.',
-    color: '#2D6E8F',
+    color: '#00D98B',
     image: '/images/home/service-seo.jpg',
     links: ['SEO Services', 'Local SEO', 'Enterprise SEO', 'SEO Audits'],
     hrefs: [
@@ -26,7 +26,7 @@ const BLOCKS = [
     icon: Megaphone,
     title: 'Paid Media & PPC',
     tagline: 'Maximum return on every ad dollar spent.',
-    color: '#C08930',
+    color: '#00D98B',
     image: '/images/home/service-ppc.jpg',
     links: ['Google Ads', 'Meta Ads', 'LinkedIn Ads', 'PPC Management'],
     hrefs: [
@@ -43,7 +43,7 @@ const BLOCKS = [
     icon: Globe,
     title: 'Brand & Social',
     tagline: 'Content and reputation that builds trust.',
-    color: '#346F58',
+    color: '#008A55',
     image: '/images/home/cta-strategy.jpg',
     links: ['Social Media', 'Email Marketing', 'Content Marketing', 'Reputation Mgmt'],
     hrefs: [
@@ -60,7 +60,7 @@ const BLOCKS = [
     icon: ShoppingCart,
     title: 'Ecommerce Growth',
     tagline: 'Integrated strategies from traffic to checkout.',
-    color: '#B85C38',
+    color: '#008A55',
     image: '/images/case-studies/saas-platform-card.jpg',
     links: ['Ecommerce SEO', 'Ecommerce PPC', 'Shopify Optimisation', 'Amazon SEO'],
     hrefs: [
@@ -78,7 +78,7 @@ export default function CoreServices() {
   const ref = useReveal()
 
   return (
-    <section ref={ref} className="section bg-white">
+    <section id="growth-build" ref={ref} className="section bg-white">
       <div className="container">
 
         <div className="text-center mb-12 max-w-xl mx-auto">
@@ -107,7 +107,7 @@ export default function CoreServices() {
                     alt={block.title}
                     className="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#090F1C]/85 via-[#090F1C]/25 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#061127]/85 via-[#061127]/25 to-transparent" />
                   <div
                     className="absolute bottom-3 left-4 w-9 h-9 rounded-lg flex items-center justify-center"
                     style={{ background: `${block.color}20`, border: `1.5px solid ${block.color}45` }}

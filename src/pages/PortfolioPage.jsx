@@ -46,8 +46,8 @@ export default function PortfolioPage() {
                   onClick={() => setActiveCategory(cat)}
                   className={`px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
                     activeCategory === cat
-                      ? 'bg-[#0B1F3A] text-white shadow-md'
-                      : 'bg-white text-[#5B6575] hover:text-[#0B1F3A] border border-[#E5E7EB] hover:border-[#0B1F3A]/30'
+                      ? 'bg-[#071735] text-white shadow-md'
+                      : 'bg-white text-[#5B6575] hover:text-[#071735] border border-[#E5E7EB] hover:border-[#071735]/30'
                   }`}
                 >
                   {cat}
@@ -60,10 +60,10 @@ export default function PortfolioPage() {
               {filteredProjects.map((project) => (
                 <article
                   key={project.slug}
-                  className="card group overflow-hidden bg-white border border-[#E5E7EB] hover:border-[#B8963E]/50 hover:shadow-xl transition-all duration-300 flex flex-col"
+                  className="card group overflow-hidden bg-white border border-[#E5E7EB] hover:border-[#008A55]/50 hover:shadow-xl transition-all duration-300 flex flex-col"
                 >
                   {/* Visual Preview Header */}
-                  <div className="h-56 bg-[#0B1F3A] relative overflow-hidden flex items-center justify-center">
+                  <div className="h-56 bg-[#071735] relative overflow-hidden flex items-center justify-center">
                     {project.thumb ? (
                       <img
                         src={project.thumb.replace('.webp', '.jpg')}
@@ -76,15 +76,15 @@ export default function PortfolioPage() {
                       />
                     ) : null}
                     {/* Fallback mockup look */}
-                    <div className="hidden absolute inset-0 bg-gradient-to-br from-[#0B1F3A] to-[#1a3a68] flex-col items-center justify-center p-6 text-center">
-                      <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-[#B8963E] mb-3">
+                    <div className="hidden absolute inset-0 bg-gradient-to-br from-[#071735] to-[#1a3a68] flex-col items-center justify-center p-6 text-center">
+                      <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-[#00E89A] mb-3">
                         <Layers size={24} />
                       </div>
                       <span className="text-white font-bold text-base mb-1">{project.title}</span>
-                      <span className="text-[#B8963E] text-xs font-semibold uppercase tracking-wider">{project.category}</span>
+                      <span className="text-[#00E89A] text-xs font-semibold uppercase tracking-wider">{project.category}</span>
                     </div>
 
-                    <div className="absolute top-3 left-3 bg-[#0B1F3A]/90 backdrop-blur-sm text-[#B8963E] px-2.5 py-1 rounded text-xs font-semibold">
+                    <div className="absolute top-3 left-3 bg-[#071735]/90 backdrop-blur-sm text-[#00E89A] px-2.5 py-1 rounded text-xs font-semibold">
                       {project.category}
                     </div>
                   </div>
@@ -103,7 +103,7 @@ export default function PortfolioPage() {
                     </div>
 
                     <h3
-                      className="text-[#0B1F3A] text-lg font-bold mb-2 group-hover:text-[#B8963E] transition-colors"
+                      className="text-[#071735] text-lg font-bold mb-2 group-hover:text-[#007A4B] transition-colors"
                       style={{ fontFamily: 'var(--font-display)' }}
                     >
                       {project.title}
@@ -115,7 +115,7 @@ export default function PortfolioPage() {
 
                     <div className="pt-4 border-t border-[#E5E7EB] flex items-center justify-between text-xs">
                       <span className="text-[#5B6575] font-medium">Client: {project.client}</span>
-                      <span className="text-[#B8963E] font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                      <span className="text-[#007A4B] font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                         Explore <ExternalLink size={12} />
                       </span>
                     </div>

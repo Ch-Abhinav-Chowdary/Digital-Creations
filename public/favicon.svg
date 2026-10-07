@@ -1,7 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Varun Digitals favicon">
-  <rect width="32" height="32" rx="5" fill="#0B1F3A"/>
-  <!-- V monogram mark -->
-  <polygon points="6,7 12,7 16,21 13,21" fill="#B8963E"/>
-  <polygon points="26,7 20,7 16,21 19,21" fill="#B8963E"/>
-  <rect x="14.5" y="21" width="3" height="4" rx="0.5" fill="#B8963E"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Upshoot Media favicon">
+  <rect width="32" height="32" rx="7" fill="#071735"/>
+  <path d="M7 8v10a9 9 0 0 0 18 0V8h-5v10a4 4 0 0 1-8 0V8H7Z" fill="#fff"/>
+  <path d="M16 24V10l-4 4-3.5-3.5L16 3l7.5 7.5L20 14l-4-4" fill="#00D98B"/>
 </svg>

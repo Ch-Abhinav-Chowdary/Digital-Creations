@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import { Search, Code2, TrendingUp, BarChart3, ArrowRight } from 'lucide-react'
 import { useReveal } from '../ui/useReveal'
 
-// Curated warm palette — steel, amber, forest, terracotta
+// Brand palette — navy and green
 const STEPS = [
   {
     phase: '01',
     icon: Search,
     title: 'Audit & Roadmap',
     metric: 'Zero Guesswork',
-    color: '#2D6E8F',          /* Deep steel blue */
+    color: '#00D98B',
     bullets: ['Technical SEO audit', 'Competitor gap analysis', 'Funnel drop-off mapping'],
   },
   {
@@ -18,7 +18,7 @@ const STEPS = [
     icon: Code2,
     title: 'Web Engineering',
     metric: '2.4× Conversion',
-    color: '#C08930',          /* Brand amber */
+    color: '#00D98B',
     bullets: ['Sub-second speeds (<0.8s)', 'WCAG-compliant UI', 'CRM & payment integration'],
   },
   {
@@ -26,7 +26,7 @@ const STEPS = [
     icon: TrendingUp,
     title: 'Traffic Surge',
     metric: '+320% Pipeline',
-    color: '#346F58',          /* Forest green */
+    color: '#008A55',
     bullets: ['Top 3 Google rankings', 'Google & Meta ad funnels', 'High-authority backlinks'],
   },
   {
@@ -34,7 +34,7 @@ const STEPS = [
     icon: BarChart3,
     title: 'Scale & Compound',
     metric: '4.8× ROAS',
-    color: '#B85C38',          /* Terracotta */
+    color: '#008A55',
     bullets: ['Live attribution dashboards', 'A/B conversion testing', 'Quarterly sprint reviews'],
   },
 ]
@@ -44,12 +44,13 @@ export default function GrowthRoadmap() {
 
   return (
     <section
+      id="growth-roadmap"
       ref={ref}
       className="section bg-white relative overflow-hidden border-b border-[var(--color-line)]"
-      aria-label="How Varun Digitals scales your business"
+      aria-label="How Upshoot Media scales your business"
     >
       {/* Top accent stripe */}
-      <div className="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#2D6E8F] via-[#C08930] to-[#346F58] opacity-70" />
+      <div className="absolute top-0 inset-x-0 h-[3px] bg-gradient-to-r from-[#00D98B] via-[#00D98B] to-[#008A55] opacity-70" />
 
       <div className="container relative z-10">
 

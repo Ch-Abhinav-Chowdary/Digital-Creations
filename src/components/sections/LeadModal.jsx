@@ -103,7 +103,7 @@ export default function LeadModal() {
             <p className="eyebrow mb-1">{SITE.name}</p>
             <h2
               id="lead-modal-headline"
-              className="text-[#0B1F3A] text-xl leading-snug"
+              className="text-[#071735] text-xl leading-snug"
               style={{ fontFamily: 'var(--font-display)' }}
             >
               {form.headline}
@@ -122,10 +122,10 @@ export default function LeadModal() {
         <div className="p-6">
           {submitted ? (
             <div className="text-center py-6">
-              <div className="w-14 h-14 rounded-full bg-[#B8963E]/10 flex items-center justify-center mx-auto mb-4">
-                <ArrowRight size={24} className="text-[#B8963E]" />
+              <div className="w-14 h-14 rounded-full bg-[#008A55]/10 flex items-center justify-center mx-auto mb-4">
+                <ArrowRight size={24} className="text-[#007A4B]" />
               </div>
-              <h3 className="text-[#0B1F3A] text-lg mb-2" style={{ fontFamily: 'var(--font-display)' }}>
+              <h3 className="text-[#071735] text-lg mb-2" style={{ fontFamily: 'var(--font-display)' }}>
                 Thank you — we will be in touch shortly.
               </h3>
               <p className="text-sm text-[#5B6575]">

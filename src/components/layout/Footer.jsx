@@ -51,9 +51,9 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-4 space-y-5">
             <Link to="/" className="inline-flex items-center gap-2" aria-label={`${SITE.name} — Home`}>
               <img
-                src="/images/brand/logo-light.svg"
+                src="/images/brand/upshoot-media-horizontal.png"
                 alt={SITE.name}
-                className="h-8 md:h-9 w-auto"
+                className="h-10 md:h-12 w-auto rounded bg-white px-2"
                 onError={(e) => {
                   e.target.onerror = null
                   e.target.style.display = 'none'
@@ -76,20 +76,20 @@ export default function Footer() {
             <address className="not-italic space-y-3 pt-2">
               <a
                 href={`tel:${SITE.phone.replace(/\D/g, '')}`}
-                className="flex items-center gap-2.5 text-sm text-slate-200 hover:text-amber-300 transition-colors py-1"
+                className="flex items-center gap-2.5 text-sm text-slate-200 hover:text-emerald-300 transition-colors py-1"
               >
-                <Phone size={15} className="flex-shrink-0 text-amber-400" />
+                <Phone size={15} className="flex-shrink-0 text-emerald-400" />
                 <span>{SITE.phone}</span>
               </a>
               <a
                 href={`mailto:${SITE.email}`}
-                className="flex items-center gap-2.5 text-sm text-slate-200 hover:text-amber-300 transition-colors py-1"
+                className="flex items-center gap-2.5 text-sm text-slate-200 hover:text-emerald-300 transition-colors py-1"
               >
-                <Mail size={15} className="flex-shrink-0 text-amber-400" />
+                <Mail size={15} className="flex-shrink-0 text-emerald-400" />
                 <span>{SITE.email}</span>
               </a>
               <div className="flex items-start gap-2.5 text-sm text-slate-200 py-1">
-                <MapPin size={15} className="flex-shrink-0 mt-0.5 text-amber-400" />
+                <MapPin size={15} className="flex-shrink-0 mt-0.5 text-emerald-400" />
                 <span className="leading-snug">
                   {SITE.address.street}, {SITE.address.city}, {SITE.address.state} {SITE.address.zip}
                 </span>
@@ -112,7 +112,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className="w-10 h-10 rounded-full flex items-center justify-center bg-white/10 hover:bg-amber-400 hover:text-[#071422] transition-all duration-200 text-white hover:-translate-y-0.5"
+                    className="w-10 h-10 rounded-full flex items-center justify-center bg-white/10 hover:bg-emerald-400 hover:text-[#071735] transition-all duration-200 text-white hover:-translate-y-0.5"
                   >
                     {IconComponent && <IconComponent />}
                   </a>
@@ -131,7 +131,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="block py-1 text-sm text-slate-300 hover:text-amber-300 transition-colors font-medium"
+                    className="block py-1 text-sm text-slate-300 hover:text-emerald-300 transition-colors font-medium"
                   >
                     {link.label}
                   </Link>
@@ -150,7 +150,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="block py-1 text-sm text-slate-300 hover:text-amber-300 transition-colors font-medium"
+                    className="block py-1 text-sm text-slate-300 hover:text-emerald-300 transition-colors font-medium"
                   >
                     {link.label}
                   </Link>
@@ -190,9 +190,9 @@ export default function Footer() {
         <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-300 text-center sm:text-left">
           <p>© {year} {SITE.name}. All rights reserved.</p>
           <div className="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2">
-            <Link to="/privacy-policy" className="hover:text-amber-300 transition-colors">Privacy Policy</Link>
-            <Link to="/terms-of-services" className="hover:text-amber-300 transition-colors">Terms of Service</Link>
-            <Link to="/cookie-policy" className="hover:text-amber-300 transition-colors">Cookie Policy</Link>
+            <Link to="/privacy-policy" className="hover:text-emerald-300 transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-services" className="hover:text-emerald-300 transition-colors">Terms of Service</Link>
+            <Link to="/cookie-policy" className="hover:text-emerald-300 transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

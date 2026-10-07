@@ -35,7 +35,7 @@ export default function TrustStrip() {
               key={`${partner.name}-${i}`}
               className="flex flex-col justify-center min-w-[240px] px-6 py-4 bg-white rounded-xl border border-[var(--color-line)] shadow-sm hover:border-[var(--color-accent)]/50 hover:shadow-md transition-all duration-300 group"
             >
-              <span className="text-sm font-bold text-[var(--color-navy)] group-hover:text-[var(--color-accent)] transition-colors">
+              <span className="text-sm font-bold text-[var(--color-navy)] group-hover:text-[var(--color-accent-text)] transition-colors">
                 {partner.name}
               </span>
               <span className="text-xs font-medium text-[var(--color-muted)] mt-0.5">{partner.sub}</span>

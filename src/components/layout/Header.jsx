@@ -64,7 +64,7 @@ function MobileNavItem({ item, onClose }) {
         {item.label}
         <ChevronDown
           size={18}
-          className={`text-[var(--color-accent)] transition-transform duration-200 ${expanded ? 'rotate-180' : ''}`}
+          className={`text-[var(--color-accent-text)] transition-transform duration-200 ${expanded ? 'rotate-180' : ''}`}
         />
       </button>
       {expanded && (
@@ -142,14 +142,14 @@ export default function Header() {
           <div className="container flex items-center justify-end gap-6 py-2">
             <a
               href={`tel:${SITE.phone.replace(/\D/g, '')}`}
-              className="flex items-center gap-1.5 hover:text-[var(--color-gold-bright)] transition-colors"
+              className="flex items-center gap-1.5 hover:text-[var(--color-green-bright)] transition-colors"
             >
               <Phone size={12} />
               {SITE.phone}
             </a>
             <a
               href={`mailto:${SITE.email}`}
-              className="hover:text-[var(--color-gold-bright)] transition-colors"
+              className="hover:text-[var(--color-green-bright)] transition-colors"
             >
               {SITE.email}
             </a>
@@ -165,11 +165,11 @@ export default function Header() {
             {/* Logo */}
             <Link to="/" className="flex items-center flex-shrink-0" aria-label={`${SITE.name} — Home`}>
               <img
-                src="/images/brand/logo-dark.svg"
+                src="/images/brand/upshoot-media-horizontal.png"
                 alt={`${SITE.name} logo`}
                 width="160"
-                height="42"
-                className="h-[42px] w-auto"
+                height="63"
+                className="h-[52px] w-auto object-contain"
               />
             </Link>
 
@@ -191,7 +191,7 @@ export default function Header() {
                     {item.label}
                     <ChevronDown
                       size={14}
-                      className={`transition-transform duration-200 ${activeMenu === item.id ? 'rotate-180 text-[var(--color-accent)]' : ''}`}
+                      className={`transition-transform duration-200 ${activeMenu === item.id ? 'rotate-180 text-[var(--color-accent-text)]' : ''}`}
                     />
                   </button>
                   <div
@@ -264,7 +264,7 @@ export default function Header() {
           <div className="flex items-center justify-between px-6 h-16 border-b border-[var(--color-line)] flex-shrink-0">
             <Link to="/" onClick={() => setMobileOpen(false)} aria-label={`${SITE.name} — Home`}>
               <img
-                src="/images/brand/logo-dark.svg"
+                src="/images/brand/upshoot-media-horizontal.png"
                 alt={`${SITE.name} logo`}
                 width="140"
                 height="36"

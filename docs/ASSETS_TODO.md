@@ -22,7 +22,7 @@
 |---|---|---|---|
 | 6 | `public/images/home/hero-bg.avif/.webp` | 1920x1080 dark navy hero background | Custom gradient SVG used in dev; replace with real artwork |
 | 7 | `public/images/home/hero-mobile.webp` | 828x1100 hero mobile crop | Crop of #6 |
-| 8 | `public/video/hero-loop.mp4/.webm` | 8-12s silent abstract or work montage | Desktop only. Must be muted, loop, playsinline. |
+| 8 | `public/video/upshoot-media-logo-transition.mp4` | 4.5s Upshoot Media logo reveal | Added to homepage hero. Muted, plays once, pauses at end; reduced-motion users see a poster and can opt to play. |
 | 9 | `public/images/home/trust-*.svg` | Certification badge marks | Only use badges you have actually earned |
 | 10 | `public/images/home/service-seo.webp` | 800x600 analytics dashboard | Real screen or custom illustration |
 | 11 | `public/images/home/service-ppc.webp` | 800x600 paid campaign report | Real screen or custom illustration |

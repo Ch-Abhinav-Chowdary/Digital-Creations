@@ -19,7 +19,7 @@ export default function Button({
     primary: 'btn-primary',
     outline: 'btn-outline',
     navy: 'btn-navy',
-    ghost: 'text-[#1F2937] hover:text-[#B8963E] bg-transparent border-none',
+    ghost: 'text-[#1F2937] hover:text-[#007A4B] bg-transparent border-none',
   }[variant]
 
   const sizeClass = {

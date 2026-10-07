@@ -2,10 +2,10 @@
 import { useReveal } from '../ui/useReveal'
 
 const STATS = [
-  { value: '500+',  label: 'Campaigns Scaled',      sub: 'Across 20+ Verticals',       color: '#2D6E8F' },
-  { value: '98.4%', label: 'Client Retention',       sub: 'Verified Performance SLAs',  color: '#346F58' },
-  { value: '12+',   label: 'Years Agency Heritage',  sub: 'Continuous Innovation',      color: '#C08930' },
-  { value: '$50M+', label: 'Client Revenue Tracked', sub: 'First-Party Attribution',    color: '#B85C38' },
+  { value: '500+',  label: 'Campaigns Scaled',      sub: 'Across 20+ Verticals',       color: '#00D98B' },
+  { value: '98.4%', label: 'Client Retention',       sub: 'Verified Performance SLAs',  color: '#00D98B' },
+  { value: '12+',   label: 'Years Agency Heritage',  sub: 'Continuous Innovation',      color: '#00D98B' },
+  { value: '$50M+', label: 'Client Revenue Tracked', sub: 'First-Party Attribution',    color: '#00D98B' },
 ]
 
 export default function StatsBand() {
@@ -21,7 +21,7 @@ export default function StatsBand() {
         aria-hidden="true"
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(192,137,48,0.9) 1px, transparent 1px)',
+          backgroundImage: 'radial-gradient(circle, rgba(0,217,139,0.9) 1px, transparent 1px)',
           backgroundSize: '32px 32px',
         }}
       />

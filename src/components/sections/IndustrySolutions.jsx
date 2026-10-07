@@ -122,14 +122,14 @@ export default function IndustrySolutions() {
                 />
 
                 {/* Heavy Dark Gradient Mesh Overlay so text never blends */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#090F1C] via-[#090F1C]/85 to-[#090F1C]/60 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#061127] via-[#061127]/85 to-[#061127]/60 pointer-events-none" />
 
                 {/* Top Sector Icon */}
                 <div className="relative z-10 flex items-center justify-between">
-                  <div className="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-[var(--color-gold-bright)] group-hover:scale-110 group-hover:bg-[var(--color-accent)] group-hover:text-white transition-all duration-300">
+                  <div className="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-[var(--color-green-bright)] group-hover:scale-110 group-hover:bg-[var(--color-accent)] group-hover:text-[#071735] transition-all duration-300">
                     <Icon size={20} />
                   </div>
-                  <span className="text-[10px] text-[var(--color-gold-bright)] font-bold uppercase tracking-wider bg-white/10 px-2.5 py-1 rounded-full border border-white/15 backdrop-blur-sm">
+                  <span className="text-[10px] text-[var(--color-green-bright)] font-bold uppercase tracking-wider bg-white/10 px-2.5 py-1 rounded-full border border-white/15 backdrop-blur-sm">
                     Sector Playbook
                   </span>
                 </div>
@@ -137,7 +137,7 @@ export default function IndustrySolutions() {
                 {/* Bottom Content with Crisp High Contrast */}
                 <div className="relative z-10 pt-6">
                   <h3
-                    className="text-lg font-bold !text-white group-hover:!text-amber-300 transition-colors mb-1.5 leading-snug"
+                    className="text-lg font-bold !text-white group-hover:!text-emerald-300 transition-colors mb-1.5 leading-snug"
                     style={{ fontFamily: 'var(--font-display)' }}
                   >
                     {ind.label}
@@ -145,7 +145,7 @@ export default function IndustrySolutions() {
                   <p className="text-xs font-medium text-slate-200 leading-relaxed mb-3">
                     {ind.desc}
                   </p>
-                  <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[var(--color-gold-bright)] group-hover:gap-2.5 transition-all">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[var(--color-green-bright)] group-hover:gap-2.5 transition-all">
                     Explore Strategy <ArrowRight size={13} />
                   </span>
                 </div>

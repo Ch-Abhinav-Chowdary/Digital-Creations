@@ -10,7 +10,7 @@ const PILLARS = [
     body: 'Algorithmic keyword discovery and predictive analytics to capture search share before competitors adapt.',
     stat: '+320%',
     statLabel: 'Organic Traffic',
-    color: '#5BA4C7',
+    color: '#00D98B',
   },
   {
     Icon: TrendingUp,
@@ -18,7 +18,7 @@ const PILLARS = [
     body: 'Strategy, creative, dev and analytics together. No handoff delays, no technical debt.',
     stat: '12+',
     statLabel: 'Years Experience',
-    color: '#E8B84B',
+    color: '#00E89A',
   },
   {
     Icon: BarChart3,
@@ -26,7 +26,7 @@ const PILLARS = [
     body: 'Every sprint tied to qualified pipeline, conversion uplifts and customer acquisition cost reduction.',
     stat: '4.8×',
     statLabel: 'Average ROAS',
-    color: '#5EBA8C',
+    color: '#00D98B',
   },
   {
     Icon: Eye,
@@ -34,7 +34,7 @@ const PILLARS = [
     body: 'Live ad accounts, server-side attribution dashboards, and plain-English executive summaries.',
     stat: '98.4%',
     statLabel: 'Client Retention',
-    color: '#DE7B58',
+    color: '#00D98B',
   },
 ]
 
@@ -42,13 +42,13 @@ export default function WhyUs() {
   const ref = useReveal()
 
   return (
-    <section ref={ref} className="section relative overflow-hidden surface-dark">
+    <section id="growth-grow" ref={ref} className="section relative overflow-hidden surface-dark">
       {/* Dot grid */}
       <div
         aria-hidden="true"
         className="absolute inset-0 opacity-[0.04]"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(196,162,74,0.9) 1px, transparent 1px)',
+          backgroundImage: 'radial-gradient(circle, rgba(0,217,139,0.9) 1px, transparent 1px)',
           backgroundSize: '36px 36px',
         }}
       />
@@ -71,7 +71,7 @@ export default function WhyUs() {
           {PILLARS.map(({ Icon, title, body, stat, statLabel, color }, i) => (
             <article
               key={title}
-              className="reveal group p-6 rounded-2xl bg-white/[0.05] border border-white/12 hover:bg-white/[0.1] hover:border-amber-400/45 hover:-translate-y-1.5 transition-all duration-300 backdrop-blur-sm"
+              className="reveal group p-6 rounded-2xl bg-white/[0.05] border border-white/12 hover:bg-white/[0.1] hover:border-emerald-400/45 hover:-translate-y-1.5 transition-all duration-300 backdrop-blur-sm"
               style={{ transitionDelay: `${i * 80}ms` }}
             >
               {/* Icon */}
@@ -88,7 +88,7 @@ export default function WhyUs() {
                 <span className="ml-2 text-xs font-bold text-slate-300 uppercase tracking-wider">{statLabel}</span>
               </div>
 
-              <h3 className="!text-white text-base font-bold mb-2 group-hover:!text-amber-300 transition-colors">
+              <h3 className="!text-white text-base font-bold mb-2 group-hover:!text-emerald-300 transition-colors">
                 {title}
               </h3>
               <p className="text-slate-300 text-sm leading-relaxed">{body}</p>
@@ -99,7 +99,7 @@ export default function WhyUs() {
         {/* Callout banner */}
         <div className="reveal rounded-2xl bg-white/[0.05] border border-white/15 p-7 lg:p-9 grid lg:grid-cols-12 gap-7 items-center">
           <div className="lg:col-span-8">
-            <span className="text-[11px] text-amber-300 font-extrabold uppercase tracking-widest block mb-2">
+            <span className="text-[11px] text-emerald-300 font-extrabold uppercase tracking-widest block mb-2">
               Partnership Philosophy
             </span>
             <h3 className="text-2xl font-bold !text-white mb-2 font-serif">

@@ -16,11 +16,11 @@ function ProcessStepper({ steps }) {
     <ol className="space-y-6">
       {steps.map((step) => (
         <li key={step.step} className="flex gap-5">
-          <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#0B1F3A] flex items-center justify-center text-[#B8963E] font-bold text-sm">
+          <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#071735] flex items-center justify-center text-[#00E89A] font-bold text-sm">
             {step.step}
           </div>
           <div className="pt-1.5">
-            <h3 className="text-base font-semibold text-[#0B1F3A] mb-1" style={{ fontFamily: 'var(--font-display)' }}>
+            <h3 className="text-base font-semibold text-[#071735] mb-1" style={{ fontFamily: 'var(--font-display)' }}>
               {step.title}
             </h3>
             <p className="text-sm text-[#5B6575] leading-relaxed">{step.body}</p>
@@ -97,7 +97,7 @@ export default function ServicePage() {
               </div>
 
               {/* Service Execution & Deliverables Visual Banner */}
-              <div className="rounded-xl overflow-hidden border border-[#E5E7EB] bg-[#0B1F3A] text-white shadow-lg relative">
+              <div className="rounded-xl overflow-hidden border border-[#E5E7EB] bg-[#071735] text-white shadow-lg relative">
                 <div className="relative h-48 sm:h-56 overflow-hidden">
                   <img
                     src={
@@ -112,13 +112,13 @@ export default function ServicePage() {
                     alt={`${service.title} Strategy & Execution`}
                     className="w-full h-full object-cover opacity-60"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F3A] via-[#0B1F3A]/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#071735] via-[#071735]/40 to-transparent" />
                   <div className="absolute bottom-4 left-6 right-6 flex items-center justify-between">
                     <div>
-                      <span className="text-[#B8963E] text-xs font-semibold uppercase tracking-widest block">Execution Blueprint</span>
+                      <span className="text-[#00E89A] text-xs font-semibold uppercase tracking-widest block">Execution Blueprint</span>
                       <span className="text-white font-bold text-lg font-serif">{service.title}</span>
                     </div>
-                    <span className="hidden sm:inline-block bg-[#B8963E] text-[#0B1F3A] text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="hidden sm:inline-block bg-[#00D98B] text-[#071735] text-xs font-bold px-3 py-1 rounded-full">
                       Full Service SLA
                     </span>
                   </div>
@@ -131,7 +131,7 @@ export default function ServicePage() {
                 <ul className="grid gap-3 sm:grid-cols-2">
                   {service.deliverables.map((d) => (
                     <li key={d} className="flex items-start gap-2.5 text-sm text-[#1F2937] p-3 rounded-lg bg-[#F7F8FA] border border-[#E5E7EB]">
-                      <CheckCircle size={16} className="text-[#B8963E] flex-shrink-0 mt-0.5" />
+                      <CheckCircle size={16} className="text-[#007A4B] flex-shrink-0 mt-0.5" />
                       <span>{d}</span>
                     </li>
                   ))}
@@ -156,7 +156,7 @@ export default function ServicePage() {
                         <Link
                           key={slug}
                           to={`/${rel.slug}`}
-                          className="px-4 py-2 rounded border border-[#E5E7EB] text-sm font-medium text-[#1F2937] hover:border-[#B8963E] hover:text-[#B8963E] transition-colors"
+                          className="px-4 py-2 rounded border border-[#E5E7EB] text-sm font-medium text-[#1F2937] hover:border-[#008A55] hover:text-[#007A4B] transition-colors"
                         >
                           {rel.title}
                         </Link>
@@ -170,7 +170,7 @@ export default function ServicePage() {
             {/* Right: sticky lead form */}
             <aside className="lg:sticky lg:top-24 self-start">
               <div className="card p-6">
-                <h2 className="text-[#0B1F3A] text-xl mb-1" style={{ fontFamily: 'var(--font-display)' }}>
+                <h2 className="text-[#071735] text-xl mb-1" style={{ fontFamily: 'var(--font-display)' }}>
                   {SITE.ctaPrimary}
                 </h2>
                 <p className="text-sm text-[#5B6575] mb-5">

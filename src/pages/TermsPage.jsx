@@ -28,7 +28,7 @@ export default function TermsPage() {
         <div className="container max-w-4xl">
           <div className="prose prose-slate max-w-none text-[#1F2937] space-y-8 leading-relaxed">
             <div>
-              <h2 className="text-2xl font-serif font-bold text-[#0B1F3A] mb-3">
+              <h2 className="text-2xl font-serif font-bold text-[#071735] mb-3">
                 1. Acceptance of Terms
               </h2>
               <p className="text-base text-[#5B6575]">
@@ -37,7 +37,7 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-serif font-bold text-[#0B1F3A] mb-3">
+              <h2 className="text-2xl font-serif font-bold text-[#071735] mb-3">
                 2. Scope of Services
               </h2>
               <p className="text-base text-[#5B6575]">
@@ -46,7 +46,7 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-serif font-bold text-[#0B1F3A] mb-3">
+              <h2 className="text-2xl font-serif font-bold text-[#071735] mb-3">
                 3. Intellectual Property Rights
               </h2>
               <p className="text-base text-[#5B6575] mb-3">
@@ -63,7 +63,7 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-serif font-bold text-[#0B1F3A] mb-3">
+              <h2 className="text-2xl font-serif font-bold text-[#071735] mb-3">
                 4. Performance & Guarantees Disclaimer
               </h2>
               <p className="text-base text-[#5B6575]">
@@ -72,7 +72,7 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-serif font-bold text-[#0B1F3A] mb-3">
+              <h2 className="text-2xl font-serif font-bold text-[#071735] mb-3">
                 5. Limitation of Liability
               </h2>
               <p className="text-base text-[#5B6575]">
@@ -81,7 +81,7 @@ export default function TermsPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-serif font-bold text-[#0B1F3A] mb-3">
+              <h2 className="text-2xl font-serif font-bold text-[#071735] mb-3">
                 6. Governing Law & Jurisdiction
               </h2>
               <p className="text-base text-[#5B6575]">
@@ -90,14 +90,14 @@ export default function TermsPage() {
             </div>
 
             <div className="p-6 bg-[#F7F8FA] rounded-[6px] border border-[#E5E7EB]">
-              <h3 className="text-lg font-bold text-[#0B1F3A] mb-2">
+              <h3 className="text-lg font-bold text-[#071735] mb-2">
                 Questions Regarding Terms
               </h3>
               <p className="text-sm text-[#5B6575]">
                 For legal notices or questions regarding our contractual terms, contact:
               </p>
-              <p className="text-sm text-[#0B1F3A] font-medium mt-2">
-                Email: <a href={`mailto:${SITE.email}`} className="text-[#B8963E] underline">{SITE.email}</a>
+              <p className="text-sm text-[#071735] font-medium mt-2">
+                Email: <a href={`mailto:${SITE.email}`} className="text-[#007A4B] underline">{SITE.email}</a>
                 <br />
                 Phone: {SITE.phone}
               </p>

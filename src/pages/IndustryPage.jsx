@@ -55,15 +55,15 @@ export default function IndustryPage() {
           </div>
 
             <div className="lg:col-span-5">
-              <div className="relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl bg-[#0B1F3A] group">
+              <div className="relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl bg-[#071735] group">
                 <img
                   src={industry.image}
                   alt={industry.alt || industry.title}
                   className="w-full h-64 sm:h-72 object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F3A] via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#071735] via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-5 right-5 flex items-center justify-between text-white">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#B8963E]">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#00E89A]">
                     {industry.title} Strategy
                   </span>
                   <span className="text-[11px] bg-white/20 backdrop-blur-md px-2.5 py-1 rounded-full font-semibold">
@@ -85,7 +85,7 @@ export default function IndustryPage() {
                 <ul className="space-y-3">
                   {industry.challenges.map((c) => (
                     <li key={c} className="flex items-start gap-3 text-[#1F2937] p-3 rounded-lg bg-[#F7F8FA] border border-[#E5E7EB]">
-                      <CheckCircle size={16} className="text-[#B8963E] flex-shrink-0 mt-0.5" />
+                      <CheckCircle size={16} className="text-[#007A4B] flex-shrink-0 mt-0.5" />
                       <span className="text-sm">{c}</span>
                     </li>
                   ))}
@@ -94,15 +94,15 @@ export default function IndustryPage() {
 
               {/* Industry Case study */}
               {industry.caseStudy && (
-                <div className="bg-[#0B1F3A] rounded-2xl overflow-hidden border border-white/10 shadow-xl">
+                <div className="bg-[#071735] rounded-2xl overflow-hidden border border-white/10 shadow-xl">
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src={industry.image}
                       alt={`${industry.caseStudy.client} Case Study`}
                       className="w-full h-full object-cover opacity-75"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F3A] via-[#0B1F3A]/40 to-transparent" />
-                    <div className="absolute top-4 left-4 bg-[#B8963E] text-[#0B1F3A] text-xs font-bold px-3 py-1 rounded shadow uppercase tracking-wider">
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#071735] via-[#071735]/40 to-transparent" />
+                    <div className="absolute top-4 left-4 bg-[#00D98B] text-[#071735] text-xs font-bold px-3 py-1 rounded shadow uppercase tracking-wider">
                       Featured Sector Case Study
                     </div>
                   </div>
@@ -110,7 +110,7 @@ export default function IndustryPage() {
                     <h3 className="text-white text-xl font-serif font-bold mb-2">
                       {industry.caseStudy.client}
                     </h3>
-                    <div className="text-[#B8963E] text-3xl font-extrabold mb-3" style={{ fontFamily: 'var(--font-display)' }}>
+                    <div className="text-[#00E89A] text-3xl font-extrabold mb-3" style={{ fontFamily: 'var(--font-display)' }}>
                       {industry.caseStudy.result}
                     </div>
                     <p className="text-white/70 text-sm leading-relaxed mb-6">
@@ -118,7 +118,7 @@ export default function IndustryPage() {
                     </p>
                     <Link
                       to={industry.caseStudy.href}
-                      className="inline-flex items-center gap-1.5 text-sm font-bold text-[#B8963E] hover:gap-2.5 transition-all"
+                      className="inline-flex items-center gap-1.5 text-sm font-bold text-[#00E89A] hover:gap-2.5 transition-all"
                     >
                       Read the full case study <ArrowRight size={15} />
                     </Link>
@@ -136,7 +136,7 @@ export default function IndustryPage() {
             {/* Sticky form */}
             <aside className="lg:sticky lg:top-24 self-start">
               <div className="card p-6">
-                <h2 className="text-[#0B1F3A] text-xl mb-1" style={{ fontFamily: 'var(--font-display)' }}>
+                <h2 className="text-[#071735] text-xl mb-1" style={{ fontFamily: 'var(--font-display)' }}>
                   Get a Free Industry Audit
                 </h2>
                 <p className="text-sm text-[#5B6575] mb-5">

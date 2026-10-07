@@ -34,7 +34,7 @@ export const SERVICES = [
     ],
     related: ['seo-services/local-seo', 'seo-services/seo-audits', 'ppc-management-services'],
     seo: {
-      title: 'SEO Services | Varun Digitals',
+      title: 'SEO Services | Upshoot Media',
       description: 'Data-driven SEO services that grow organic traffic, improve rankings and drive qualified leads. Technical, content and link-building expertise in one place.',
     },
   },
@@ -68,7 +68,7 @@ export const SERVICES = [
     ],
     related: ['digital-marketing/seo-services', 'digital-marketing/seo-services/seo-audits'],
     seo: {
-      title: 'Local SEO Services | Brandname Digital',
+      title: 'Local SEO Services | Upshoot Media',
       description: 'Local SEO services that improve your Google Maps visibility, citation consistency and local organic rankings for service-area businesses.',
     },
   },
@@ -102,7 +102,7 @@ export const SERVICES = [
     ],
     related: ['digital-marketing/seo-services', 'digital-marketing/seo-services/seo-audits'],
     seo: {
-      title: 'Enterprise SEO Services | Brandname Digital',
+      title: 'Enterprise SEO Services | Upshoot Media',
       description: 'Enterprise SEO programmes for large websites, multi-location businesses and competitive markets. Technical, content and scalable strategy from a senior team.',
     },
   },
@@ -136,7 +136,7 @@ export const SERVICES = [
     ],
     related: ['digital-marketing/seo-services', 'digital-marketing/seo-services/local-seo'],
     seo: {
-      title: 'SEO Audit Services | Brandname Digital',
+      title: 'SEO Audit Services | Upshoot Media',
       description: 'Comprehensive SEO audits covering technical health, content quality, backlink profile and competitor benchmarks. Delivered as an actionable prioritised report.',
     },
   },
@@ -170,7 +170,7 @@ export const SERVICES = [
     ],
     related: ['digital-marketing/ppc-management-services/google-ads', 'digital-marketing/seo-services'],
     seo: {
-      title: 'PPC Management Services | Brandname Digital',
+      title: 'PPC Management Services | Upshoot Media',
       description: 'Managed PPC services across Google Ads, Meta and LinkedIn. We maximise ROAS through rigorous account structure, creative testing and continuous optimisation.',
     },
   },
@@ -204,7 +204,7 @@ export const SERVICES = [
     ],
     related: ['digital-marketing/social-media-management', 'digital-marketing/content-marketing'],
     seo: {
-      title: 'Social Media Marketing Services | Brandname Digital',
+      title: 'Social Media Marketing Services | Upshoot Media',
       description: 'Strategic social media marketing that builds audience, authority and leads across LinkedIn, Instagram, Facebook and more.',
     },
   },
@@ -238,7 +238,7 @@ export const SERVICES = [
     ],
     related: ['digital-marketing/seo-services', 'digital-marketing/social-media-marketing'],
     seo: {
-      title: 'Content Marketing Services | Brandname Digital',
+      title: 'Content Marketing Services | Upshoot Media',
       description: 'Original content marketing that drives organic traffic, earns links and converts readers — written to E-E-A-T standards by experienced writers.',
     },
   },

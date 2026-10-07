@@ -37,7 +37,7 @@ export default function CookieBanner() {
     >
       <div className="bg-white rounded-[var(--radius)] border border-[var(--color-line)] shadow-[var(--shadow-lifted)] p-5">
         <div className="flex items-start justify-between gap-3 mb-3">
-          <h2 className="text-base font-semibold text-[#0B1F3A]" style={{ fontFamily: 'var(--font-display)' }}>
+          <h2 className="text-base font-semibold text-[#071735]" style={{ fontFamily: 'var(--font-display)' }}>
             Cookie Preferences
           </h2>
           <button
@@ -50,7 +50,7 @@ export default function CookieBanner() {
         </div>
         <p className="text-sm text-[#5B6575] leading-relaxed mb-4">
           We use cookies to improve your browsing experience and analyse site traffic. By clicking Accept, you consent to our use of cookies.{' '}
-          <Link to="/cookie-policy" className="text-[#B8963E] hover:underline">
+          <Link to="/cookie-policy" className="text-[#007A4B] hover:underline">
             Learn more
           </Link>
         </p>

@@ -25,13 +25,13 @@ export const CASE_STUDIES = [
     image: '/images/case-studies/saas-platform-card.jpg',
     heroImage: '/images/case-studies/saas-platform-card.jpg',
     testimonial: {
-      quote: "Varun Digitals completely turned our inbound pipeline around. Organic search is now our #1 revenue acquisition channel.",
+      quote: "Upshoot Media completely turned our inbound pipeline around. Organic search is now our #1 revenue acquisition channel.",
       author: "Alex Morgan",
       role: "VP of Marketing, CloudFlow"
     },
     seo: {
-      title: 'SaaS Organic Growth Case Study | Varun Digitals',
-      description: 'How Varun Digitals grew organic MQLs by over 300% for a B2B SaaS platform through technical SEO and content marketing.',
+      title: 'SaaS Organic Growth Case Study | Upshoot Media',
+      description: 'How Upshoot Media grew organic MQLs by over 300% for a B2B SaaS platform through technical SEO and content marketing.',
     },
   },
   {
@@ -61,8 +61,8 @@ export const CASE_STUDIES = [
       role: "Managing Principal, Apex Property"
     },
     seo: {
-      title: 'Real Estate Lead Generation Case Study | Varun Digitals',
-      description: 'How Varun Digitals doubled inbound leads for a real estate agency using local SEO and Google Ads in eight months.',
+      title: 'Real Estate Lead Generation Case Study | Upshoot Media',
+      description: 'How Upshoot Media doubled inbound leads for a real estate agency using local SEO and Google Ads in eight months.',
     },
   },
   {
@@ -87,13 +87,13 @@ export const CASE_STUDIES = [
     image: '/images/case-studies/saas-platform-card.jpg',
     heroImage: '/images/case-studies/saas-platform-card.jpg',
     testimonial: {
-      quote: "Varun Digitals gave us back control over our customer data and our margins. An absolute game-changer.",
+      quote: "Upshoot Media gave us back control over our customer data and our margins. An absolute game-changer.",
       author: "Elena Rostova",
       role: "Operations Director, Artisan Group"
     },
     seo: {
-      title: 'Restaurant Group Digital Marketing Case Study | Varun Digitals',
-      description: 'How Varun Digitals helped a restaurant group grow direct online orders by 85% and reduce delivery platform dependency in five months.',
+      title: 'Restaurant Group Digital Marketing Case Study | Upshoot Media',
+      description: 'How Upshoot Media helped a restaurant group grow direct online orders by 85% and reduce delivery platform dependency in five months.',
     },
   },
 ]

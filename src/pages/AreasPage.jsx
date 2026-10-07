@@ -42,7 +42,7 @@ export default function AreasPage() {
           <div className="grid gap-12 lg:grid-cols-2 items-center mb-16">
             <div>
               <p className="eyebrow mb-3">Remote-First Agility, Local Market Precision</p>
-              <h2 className="text-3xl lg:text-4xl font-serif font-bold text-[#0B1F3A] mb-6 leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-serif font-bold text-[#071735] mb-6 leading-tight">
                 Empowering businesses nationwide to dominate regional and national search
               </h2>
               <p className="text-base text-[#5B6575] leading-relaxed mb-6">
@@ -56,7 +56,7 @@ export default function AreasPage() {
                   'Full compliance with federal, regional, and industry advertising standards',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
-                    <CheckCircle2 size={18} className="text-[#B8963E] flex-shrink-0 mt-1" />
+                    <CheckCircle2 size={18} className="text-[#007A4B] flex-shrink-0 mt-1" />
                     <span className="text-sm font-medium text-[#1F2937]">{item}</span>
                   </div>
                 ))}
@@ -64,12 +64,12 @@ export default function AreasPage() {
             </div>
 
             <div className="bg-[#F7F8FA] p-8 rounded-[8px] border border-[#E5E7EB]">
-              <h3 className="text-xl font-serif font-bold text-[#0B1F3A] mb-4">
+              <h3 className="text-xl font-serif font-bold text-[#071735] mb-4">
                 Primary Regional Hub
               </h3>
               <div className="space-y-4 text-sm text-[#5B6575]">
                 <div className="flex items-start gap-3">
-                  <MapPin className="text-[#B8963E] flex-shrink-0 mt-1" size={20} />
+                  <MapPin className="text-[#007A4B] flex-shrink-0 mt-1" size={20} />
                   <div>
                     <strong className="text-[#1F2937] block font-semibold">New York Headquarters:</strong>
                     {SITE.address.street}, {SITE.address.city}, {SITE.address.state} {SITE.address.zip}
@@ -94,7 +94,7 @@ export default function AreasPage() {
           <div className="mt-16">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <p className="eyebrow mb-2">Key Metro Coverage</p>
-              <h2 className="text-3xl font-serif font-bold text-[#0B1F3A]">
+              <h2 className="text-3xl font-serif font-bold text-[#071735]">
                 Key Markets & Industry Clusters
               </h2>
             </div>
@@ -103,15 +103,15 @@ export default function AreasPage() {
               {MAJOR_MARKETS.map((m) => (
                 <div
                   key={m.city}
-                  className="p-6 rounded-[6px] border border-[#E5E7EB] bg-white hover:border-[#B8963E] hover:shadow-md transition-all duration-200"
+                  className="p-6 rounded-[6px] border border-[#E5E7EB] bg-white hover:border-[#008A55] hover:shadow-md transition-all duration-200"
                 >
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-semibold uppercase tracking-wider text-[#B8963E]">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-[#007A4B]">
                       {m.region}
                     </span>
                     <MapPin size={16} className="text-[#5B6575]" />
                   </div>
-                  <h3 className="text-lg font-serif font-bold text-[#0B1F3A] mb-2">
+                  <h3 className="text-lg font-serif font-bold text-[#071735] mb-2">
                     {m.city}
                   </h3>
                   <p className="text-xs text-[#5B6575] leading-relaxed mb-4">
@@ -119,7 +119,7 @@ export default function AreasPage() {
                   </p>
                   <Link
                     to="/contact-us"
-                    className="text-xs font-semibold text-[#0B1F3A] hover:text-[#B8963E] inline-flex items-center gap-1 transition-colors"
+                    className="text-xs font-semibold text-[#071735] hover:text-[#007A4B] inline-flex items-center gap-1 transition-colors"
                   >
                     Consult our specialists <ArrowRight size={12} />
                   </Link>

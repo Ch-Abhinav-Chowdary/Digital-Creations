@@ -98,9 +98,9 @@ export default function HubPage() {
                         <li key={link.href}>
                           <Link
                             to={link.href}
-                            className="flex items-center gap-2 text-sm text-[#1F2937] hover:text-[#B8963E] transition-colors py-1"
+                            className="flex items-center gap-2 text-sm text-[#1F2937] hover:text-[#007A4B] transition-colors py-1"
                           >
-                            <ArrowRight size={13} className="text-[#B8963E] flex-shrink-0" />
+                            <ArrowRight size={13} className="text-[#007A4B] flex-shrink-0" />
                             {link.label}
                           </Link>
                         </li>
@@ -123,9 +123,9 @@ export default function HubPage() {
                   <Link
                     key={svc.slug}
                     to={`/${svc.slug}`}
-                    className="card group overflow-hidden flex flex-col border border-[#E5E7EB] hover:border-[#B8963E]/50 hover:shadow-xl transition-all duration-300"
+                    className="card group overflow-hidden flex flex-col border border-[#E5E7EB] hover:border-[#008A55]/50 hover:shadow-xl transition-all duration-300"
                   >
-                    <div className="h-36 bg-[#0B1F3A] relative overflow-hidden">
+                    <div className="h-36 bg-[#071735] relative overflow-hidden">
                       <img
                         src={
                           svc.slug.includes('seo')
@@ -139,17 +139,17 @@ export default function HubPage() {
                         alt={svc.title}
                         className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F3A] via-transparent to-transparent" />
-                      <div className="absolute top-3 left-3 bg-[#0B1F3A]/90 backdrop-blur-sm text-[#B8963E] text-[11px] font-bold px-2 py-0.5 rounded">
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#071735] via-transparent to-transparent" />
+                      <div className="absolute top-3 left-3 bg-[#071735]/90 backdrop-blur-sm text-[#00E89A] text-[11px] font-bold px-2 py-0.5 rounded">
                         {svc.group}
                       </div>
                     </div>
                     <div className="p-6 flex flex-col flex-1">
-                      <h3 className="text-[#0B1F3A] text-lg font-bold mb-2 group-hover:text-[#B8963E] transition-colors" style={{ fontFamily: 'var(--font-display)' }}>
+                      <h3 className="text-[#071735] text-lg font-bold mb-2 group-hover:text-[#007A4B] transition-colors" style={{ fontFamily: 'var(--font-display)' }}>
                         {svc.title}
                       </h3>
                       <p className="text-sm text-[#5B6575] flex-1 mb-4 leading-relaxed">{svc.tagline}</p>
-                      <span className="inline-flex items-center gap-1 text-xs font-bold text-[#B8963E] group-hover:gap-2 transition-all">
+                      <span className="inline-flex items-center gap-1 text-xs font-bold text-[#007A4B] group-hover:gap-2 transition-all">
                         View service detail <ArrowRight size={13} />
                       </span>
                     </div>

@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import Hero from '../components/sections/Hero'
 import TrustStrip from '../components/sections/TrustStrip'
 import GrowthRoadmap from '../components/sections/GrowthRoadmap'
+import GrowthProgress from '../components/sections/GrowthProgress'
 import CoreServices from '../components/sections/CoreServices'
 import DesignCards from '../components/sections/DesignCards'
 import PlatformGrid from '../components/sections/PlatformGrid'
@@ -44,6 +45,7 @@ export default function HomePage() {
       </Helmet>
 
       <main id="main-content">
+      <GrowthProgress />
       <Hero />
 
       {/* 2. Trust strip */}

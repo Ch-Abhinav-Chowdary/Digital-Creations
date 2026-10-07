@@ -37,7 +37,7 @@ export default function Breadcrumbs({ overrides = {} }) {
               ) : (
                 <Link
                   to={crumb.href}
-                  className="hover:text-[#B8963E] transition-colors"
+                  className="hover:text-[#007A4B] transition-colors"
                 >
                   {crumb.label}
                 </Link>

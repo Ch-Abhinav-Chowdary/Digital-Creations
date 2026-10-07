@@ -9,7 +9,7 @@ const CARDS = [
     title: 'Website Design',
     tagline: 'Conversion-first, mobile-native.',
     href: '/website-design-services',
-    color: '#2D6E8F',
+    color: '#00D98B',
     image: '/images/portfolio/law-firm-thumb.jpg',
     badge: '99/100 Speed',
   },
@@ -18,7 +18,7 @@ const CARDS = [
     title: 'Website Redesign',
     tagline: 'Transform without starting from scratch.',
     href: '/website-redesign',
-    color: '#C08930',
+    color: '#00D98B',
     image: '/images/case-studies/saas-platform-card.jpg',
     badge: '2.4× Conversions',
   },
@@ -27,7 +27,7 @@ const CARDS = [
     title: 'Ecommerce Design',
     tagline: 'Premium Shopify & WooCommerce stores.',
     href: '/ecommerce-web-design',
-    color: '#346F58',
+    color: '#008A55',
     image: '/images/home/service-seo.jpg',
     badge: 'Shopify Plus',
   },
@@ -36,7 +36,7 @@ const CARDS = [
     title: 'Custom Development',
     tagline: 'Bespoke apps built for scale.',
     href: '/custom-web-design',
-    color: '#B85C38',
+    color: '#008A55',
     image: '/images/home/hero-bg.jpg',
     badge: 'WCAG AA',
   },
@@ -96,7 +96,7 @@ export default function DesignCards() {
 
                 <div className="p-5 flex flex-col flex-1 bg-white">
                   <h3
-                    className="text-base font-bold text-[var(--color-navy)] mb-1.5 group-hover:text-[var(--color-accent)] transition-colors"
+                    className="text-base font-bold text-[var(--color-navy)] mb-1.5 group-hover:text-[var(--color-accent-text)] transition-colors"
                     style={{ fontFamily: 'var(--font-display)' }}
                   >
                     {card.title}

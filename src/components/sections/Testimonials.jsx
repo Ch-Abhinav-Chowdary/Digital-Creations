@@ -12,7 +12,7 @@ const TESTIMONIALS = [
     industry: 'B2B SaaS',
     initials: 'AM',
     metric: '+320% Organic MQLs',
-    metricColor: '#346F58',
+    metricColor: '#008A55',
   },
   {
     quote: 'Their redesign completely shifted us away from expensive portal fees. Mobile conversion doubled and direct inquiries surged 65% in the first quarter.',
@@ -22,17 +22,17 @@ const TESTIMONIALS = [
     industry: 'Commercial Real Estate',
     initials: 'DS',
     metric: '2.1× Inbound Leads',
-    metricColor: '#2D6E8F',
+    metricColor: '#00D98B',
   },
   {
-    quote: 'Varun Digitals doesn\'t report vanity metrics — every deliverable ties to revenue impact and lead velocity. An indispensable growth partner.',
+    quote: 'Upshoot Media doesn\'t report vanity metrics — every deliverable ties to revenue impact and lead velocity. An indispensable growth partner.',
     name: 'Elena Rostova',
     role: 'Chief Operating Officer',
     company: 'Artisan Culinary Group',
     industry: 'Hospitality & Retail',
     initials: 'ER',
     metric: '−28% Delivery Costs',
-    metricColor: '#C08930',
+    metricColor: '#00D98B',
   },
 ]
 
@@ -47,7 +47,7 @@ export default function Testimonials() {
   return (
     <section ref={ref} className="section bg-[var(--color-surface)] relative overflow-hidden">
       {/* Top accent line */}
-      <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-[var(--color-accent)] via-[var(--color-tone-steel)] to-[var(--color-tone-forest)] opacity-70" />
+      <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-[var(--color-accent)] via-[var(--color-tone-green)] to-[var(--color-tone-forest)] opacity-70" />
 
       <div className="container">
 
@@ -64,13 +64,13 @@ export default function Testimonials() {
           <div className="relative bg-white rounded-[var(--radius-lg)] border border-[var(--color-line)] shadow-[var(--shadow-lifted)] overflow-hidden">
 
             {/* Colored top bar */}
-            <div className="h-1 bg-gradient-to-r from-[var(--color-accent)] via-[var(--color-tone-steel)] to-[var(--color-tone-forest)]" />
+            <div className="h-1 bg-gradient-to-r from-[var(--color-accent)] via-[var(--color-tone-green)] to-[var(--color-tone-forest)]" />
 
             <div className="p-8 md:p-10">
               {/* Stars + metric */}
               <div className="flex flex-wrap items-center justify-between gap-3 mb-7">
                 <div className="flex items-center gap-2">
-                  <div className="flex text-[var(--color-accent)]">
+                  <div className="flex text-[var(--color-accent-text)]">
                     {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
                   </div>
                   <span className="text-xs font-bold text-[var(--color-muted)]">Verified Executive Review</span>
@@ -90,7 +90,7 @@ export default function Testimonials() {
 
               {/* Quote */}
               <div className="relative mb-8">
-                <Quote size={40} className="text-[var(--color-accent)]/15 absolute -top-3 -left-1 pointer-events-none" aria-hidden="true" />
+                <Quote size={40} className="text-[var(--color-accent-text)]/15 absolute -top-3 -left-1 pointer-events-none" aria-hidden="true" />
                 <blockquote
                   className="text-[var(--color-ink)] text-lg md:text-xl italic leading-relaxed pl-6 border-l-4 border-[var(--color-accent)]"
                   style={{ fontFamily: 'var(--font-display)' }}
@@ -103,7 +103,7 @@ export default function Testimonials() {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5 pt-6 border-t border-[var(--color-line)]">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-[var(--color-navy)] border-2 border-[var(--color-accent)] flex items-center justify-center flex-shrink-0">
-                    <span className="text-[var(--color-gold-bright)] font-bold text-sm">{t.initials}</span>
+                    <span className="text-[var(--color-green-bright)] font-bold text-sm">{t.initials}</span>
                   </div>
                   <div>
                     <div className="font-extrabold text-[var(--color-navy)] text-sm">{t.name}</div>

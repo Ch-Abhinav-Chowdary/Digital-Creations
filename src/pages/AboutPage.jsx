@@ -47,22 +47,22 @@ export default function AboutPage() {
                 </div>
               </div>
               {/* Real agency team / strategy image */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#E5E7EB] bg-[#0B1F3A] group">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#E5E7EB] bg-[#071735] group">
                 <img
                   src="/images/home/cta-strategy.jpg"
-                  alt="Varun Digitals executive leadership & marketing strategy team"
+                  alt="Upshoot Media executive leadership & marketing strategy team"
                   className="w-full h-full object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-700"
                   onError={(e) => {
                     e.target.style.display = 'none'
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F3A]/90 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#071735]/90 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white">
                   <div>
-                    <span className="text-[#B8963E] text-xs uppercase tracking-widest font-semibold block">Strategy & Engineering</span>
-                    <span className="text-white font-bold text-lg font-serif">Varun Digitals Team</span>
+                    <span className="text-[#00E89A] text-xs uppercase tracking-widest font-semibold block">Strategy & Engineering</span>
+                    <span className="text-white font-bold text-lg font-serif">Upshoot Media Team</span>
                   </div>
-                  <div className="bg-[#B8963E] text-[#0B1F3A] px-3.5 py-1.5 rounded-full text-xs font-bold shadow-md">
+                  <div className="bg-[#00D98B] text-[#071735] px-3.5 py-1.5 rounded-full text-xs font-bold shadow-md">
                     12+ Years Exp.
                   </div>
                 </div>
@@ -77,7 +77,7 @@ export default function AboutPage() {
             <div className="grid gap-6 sm:grid-cols-2">
               {VALUES.map((v) => (
                 <div key={v.title} className="card p-7">
-                  <h3 className="text-[#0B1F3A] text-lg mb-2" style={{ fontFamily: 'var(--font-display)' }}>{v.title}</h3>
+                  <h3 className="text-[#071735] text-lg mb-2" style={{ fontFamily: 'var(--font-display)' }}>{v.title}</h3>
                   <p className="text-sm text-[#5B6575] leading-relaxed">{v.body}</p>
                 </div>
               ))}
