@@ -8,13 +8,13 @@ export const SITE = {
     'Upshoot Media helps businesses grow through digital marketing, creative design, and conversion-focused web development.',
 
   // Contact — replace with real values before launch
-  phone: '+1 (800) 000-0000',
-  email: 'hello@brandnamedigital.com',
+  phone: '+1 (612) 437-7568',
+  email: 'mediaupshoot@gmail.com',
   address: {
-    street: '123 Agency Avenue, Suite 400',
-    city: 'New York',
-    state: 'NY',
-    zip: '10001',
+    street: '1124 Annalea Cove Dr',
+    city: 'Lewisville',
+    state: 'TX',
+    zip: '75056',
     country: 'United States',
   },
 
