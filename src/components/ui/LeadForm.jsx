@@ -4,7 +4,8 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { useState } from 'react'
-import { ArrowRight, CheckCircle } from 'lucide-react'
+import { ArrowRight, CheckCircle, AlertCircle } from 'lucide-react'
+import { SITE } from '../../config/site'
 
 const schema = z.object({
   name: z.string().min(2, 'Please enter your full name'),
@@ -16,6 +17,7 @@ const schema = z.object({
 
 export default function LeadForm({ formId = 'lead', showMessage = false, submitLabel = 'Send Request' }) {
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState(false)
 
   const {
     register,
@@ -24,15 +26,20 @@ export default function LeadForm({ formId = 'lead', showMessage = false, submitL
   } = useForm({ resolver: zodResolver(schema) })
 
   const onSubmit = async (data) => {
+    setError(false)
     try {
-      await fetch('/api/lead', {
+      const res = await fetch(SITE.formspreeEndpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, formId, source: 'inline' }),
-      }).catch(() => {})
-      setSubmitted(true)
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ ...data, _subject: `New enquiry from ${data.name} — ${SITE.name}`, formId, source: 'inline' }),
+      })
+      if (res.ok) {
+        setSubmitted(true)
+      } else {
+        setError(true)
+      }
     } catch {
-      setSubmitted(true)
+      setError(true)
     }
   }
 
@@ -156,6 +163,13 @@ export default function LeadForm({ formId = 'lead', showMessage = false, submitL
       >
         {isSubmitting ? 'Sending…' : submitLabel} {!isSubmitting && <ArrowRight size={15} />}
       </button>
+
+      {error && (
+        <div className="flex items-center gap-2 rounded-lg bg-red-50 border border-red-200 p-3 text-sm text-red-700">
+          <AlertCircle size={15} className="flex-shrink-0" />
+          Something went wrong. Please try again or call us directly.
+        </div>
+      )}
     </form>
   )
 }

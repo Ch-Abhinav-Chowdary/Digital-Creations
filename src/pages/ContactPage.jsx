@@ -45,7 +45,6 @@ export default function ContactPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
                 {/* <div className="flex items-start gap-4">
                   <div className="w-11 h-11 icon-tile">
                     <Mail size={18} className="text-[#007A4B]" />

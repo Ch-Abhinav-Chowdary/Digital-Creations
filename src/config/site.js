@@ -10,6 +10,8 @@ export const SITE = {
   // Contact — replace with real values before launch
   phone: '+1 (612) 437-7568',
   // email: 'mediaupshoot@gmail.com',
+  // ↓ Paste your Formspree form URL here after signing up at https://formspree.io
+  formspreeEndpoint: 'https://formspree.io/f/YOUR_FORM_ID',
   address: {
     street: '1124 Annalea Cove Dr',
     city: 'Lewisville',

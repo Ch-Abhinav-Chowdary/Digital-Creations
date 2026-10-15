@@ -63,12 +63,16 @@ export default function LeadModal() {
 
   const onSubmit = async (data) => {
     try {
-      await fetch('/api/lead', {
+      const res = await fetch(SITE.formspreeEndpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, formId: form.id, source: 'popup' }),
-      }).catch(() => {}) // graceful failure in dev (no API route in plain Vite)
-      setSubmitted(true)
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ ...data, _subject: `New enquiry from ${data.name} — ${SITE.name}`, formId: form.id, source: 'popup' }),
+      })
+      if (res.ok) {
+        setSubmitted(true)
+      } else {
+        setSubmitted(true) // still mark done — don't block UX on popup
+      }
     } catch {
       setSubmitted(true)
     }
