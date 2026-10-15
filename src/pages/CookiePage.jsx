@@ -93,9 +93,9 @@ export default function CookiePage() {
               </h3>
               <p className="text-sm text-[#5B6575]">
                 If you have questions about our use of cookies or tracking technologies, please contact our technical team at{' '}
-                <a href={`mailto:${SITE.email}`} className="text-[#007A4B] underline font-medium">
+              {/* <a href={`mailto:${SITE.email}`} className="text-[#007A4B] underline font-medium">
                   {SITE.email}
-                </a>.
+                </a>. */}
               </p>
             </div>
           </div>

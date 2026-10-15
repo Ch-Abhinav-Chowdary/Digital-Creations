@@ -147,12 +147,12 @@ export default function Header() {
               <Phone size={12} />
               {SITE.phone}
             </a>
-            <a
+            {/* <a
               href={`mailto:${SITE.email}`}
               className="hover:text-[var(--color-green-bright)] transition-colors"
             >
               {SITE.email}
-            </a>
+            </a> */}
           </div>
         </div>
 

@@ -97,8 +97,8 @@ export default function TermsPage() {
                 For legal notices or questions regarding our contractual terms, contact:
               </p>
               <p className="text-sm text-[#071735] font-medium mt-2">
-                Email: <a href={`mailto:${SITE.email}`} className="text-[#007A4B] underline">{SITE.email}</a>
-                <br />
+                {/* Email: <a href={`mailto:${SITE.email}`} className="text-[#007A4B] underline">{SITE.email}</a>
+                <br /> */}
                 Phone: {SITE.phone}
               </p>
             </div>

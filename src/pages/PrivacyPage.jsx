@@ -103,8 +103,8 @@ export default function PrivacyPage() {
                 To exercise any privacy rights or ask questions regarding this policy, please reach our compliance team directly:
               </p>
               <p className="text-sm text-[#071735] font-medium">
-                Email: <a href={`mailto:${SITE.email}`} className="text-[#007A4B] underline">{SITE.email}</a>
-                <br />
+                {/* Email: <a href={`mailto:${SITE.email}`} className="text-[#007A4B] underline">{SITE.email}</a>
+                <br /> */}
                 Address: {SITE.address.street}, {SITE.address.city}, {SITE.address.state} {SITE.address.zip}
               </p>
             </div>

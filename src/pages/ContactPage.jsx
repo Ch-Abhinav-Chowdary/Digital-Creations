@@ -46,6 +46,7 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
+                {/* <div className="flex items-start gap-4">
                   <div className="w-11 h-11 icon-tile">
                     <Mail size={18} className="text-[#007A4B]" />
                   </div>
@@ -55,7 +56,7 @@ export default function ContactPage() {
                       {SITE.email}
                     </a>
                   </div>
-                </div>
+                </div> */}
                 <div className="flex items-start gap-4">
                   <div className="w-11 h-11 icon-tile">
                     <MapPin size={18} className="text-[#007A4B]" />

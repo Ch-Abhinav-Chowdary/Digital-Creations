@@ -31,7 +31,7 @@ export default function HomePage() {
           name: SITE.name,
           url: SITE.url,
           telephone: SITE.phone,
-          email: SITE.email,
+          // email: SITE.email,
           address: {
             '@type': 'PostalAddress',
             streetAddress: SITE.address.street,

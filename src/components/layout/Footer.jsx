@@ -81,13 +81,13 @@ export default function Footer() {
                 <Phone size={15} className="flex-shrink-0 text-emerald-400" />
                 <span>{SITE.phone}</span>
               </a>
-              <a
+              {/* <a
                 href={`mailto:${SITE.email}`}
                 className="flex items-center gap-2.5 text-sm text-slate-200 hover:text-emerald-300 transition-colors py-1"
               >
                 <Mail size={15} className="flex-shrink-0 text-emerald-400" />
                 <span>{SITE.email}</span>
-              </a>
+              </a> */}
               <div className="flex items-start gap-2.5 text-sm text-slate-200 py-1">
                 <MapPin size={15} className="flex-shrink-0 mt-0.5 text-emerald-400" />
                 <span className="leading-snug">
